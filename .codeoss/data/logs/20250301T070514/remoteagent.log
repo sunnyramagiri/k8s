@@ -1,0 +1,17 @@
+2025-03-01 07:05:14.566 [info] 
+
+
+
+
+2025-03-01 07:05:14.582 [info] Extension host agent started.
+2025-03-01 07:05:14.599 [info] Started initializing default profile extensions in extensions installation folder. file:///home/ramagirisunny11/.codeoss/extensions
+2025-03-01 07:05:14.611 [info] Completed initializing default profile extensions in extensions installation folder. file:///home/ramagirisunny11/.codeoss/extensions
+2025-03-01 07:05:16.613 [info] [127.0.0.1][91d40fe7][ManagementConnection] New connection established.
+2025-03-01 07:05:16.730 [info] [127.0.0.1][75cf0495][ExtensionHostConnection] New connection established.
+2025-03-01 07:05:18.470 [info] [127.0.0.1][75cf0495][ExtensionHostConnection] <1230> Launched Extension Host Process.
+2025-03-01 07:48:33.884 [info] [127.0.0.1][91d40fe7][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2025-03-01 08:11:30.596 [info] [127.0.0.1][688df5c4][ManagementConnection] New connection established.
+2025-03-01 08:11:30.696 [info] [127.0.0.1][ab570ac7][ExtensionHostConnection] New connection established.
+2025-03-01 08:11:30.702 [info] [127.0.0.1][ab570ac7][ExtensionHostConnection] <2263> Launched Extension Host Process.
+2025-03-01 08:16:30.842 [info] [127.0.0.1][75cf0495][ExtensionHostConnection] <1230> Extension Host Process exited with code: 0, signal: null.
+2025-03-01 08:34:33.355 [info] [127.0.0.1][688df5c4][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
