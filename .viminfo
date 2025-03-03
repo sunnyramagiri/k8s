@@ -12,7 +12,7 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
-|2,0,1740828241,,"wq"
+|2,0,1740981778,,"wq"
 :q!
 |2,0,1740817533,,"q!"
 
@@ -26,6 +26,47 @@
 
 # Registers:
 ""1	LINE	0
+	    icontainers: 
+	    - name: myjenkins
+	      image: jenkins/jenkins
+	      ports:
+	        - containorPort: 8080
+	          hostPost: 9090
+	...
+|3,1,1,1,7,0,1740980771,"    icontainers: ","    - name: myjenkins","      image: jenkins/jenkins","      ports:","        - containorPort: 8080","          hostPost: 9090","..."
+"2	LINE	0
+	---
+	apiVersion: V1
+	kind: Pod
+	metadata:
+	  name: myjenkins
+	  labels:
+	    type: ci/cd
+	    author: suny
+	spec:
+	  containers:
+	    - name: myjenkins
+	      image: jenkins/jenkins
+	      ports:
+	        - containorPort: 8080
+	          hostPort: 9090
+	...
+|3,0,2,1,16,0,1740980391,"---","apiVersion: V1","kind: Pod","metadata:","  name: myjenkins","  labels:","    type: ci/cd","    author: suny","spec:","  containers:","    - name: myjenkins","      image: jenkins/jenkins","      ports:","        - containorPort: 8080","          hostPort: 9090","..."
+"3	LINE	0
+	metadata:
+	  labels:
+|3,0,3,1,2,0,1740979514,"metadata:","  labels:"
+"4	LINE	0
+	      env:
+	        - name: POSTGRES_PASSWORD
+	          value: sunny
+	        - name: POSTGRES_USER
+	          value: myuser
+	        - name: POSTGRES_DB
+	          value: mydb
+	...
+|3,0,4,1,8,0,1740979338,"      env:","        - name: POSTGRES_PASSWORD","          value: sunny","        - name: POSTGRES_USER","          value: myuser","        - name: POSTGRES_DB","          value: mydb","..."
+"5	LINE	0
 	-piVersion: v1
 	kind: Pod
 	metadata:
@@ -45,10 +86,10 @@
 	                                                                                                    - name: POSTGRES_DB
 	                                                                                                                value: mydb
 	                                                                                                                  ...
-|3,1,1,1,19,0,1740826283,"-piVersion: v1","kind: Pod","metadata:","    name: postgres-pod","        labels:","              app: db","                    author: intelliqit","                    spec:","                        containers:","                              - name: mydb","                                      image: postgres","                                              env:",>83
+|3,0,5,1,19,0,1740826283,"-piVersion: v1","kind: Pod","metadata:","    name: postgres-pod","        labels:","              app: db","                    author: intelliqit","                    spec:","                        containers:","                              - name: mydb","                                      image: postgres","                                              env:",>83
 |<"                                                        - name: POSTGRES_PASSWORD","                                                                    value: intelliqit","                                                                              - name: POSTGRES_USER","                                                                                          value: myuser",>121
 |<"                                                                                                    - name: POSTGRES_DB","                                                                                                                value: mydb","                                                                                                                  ..."
-"2	LINE	0
+"6	LINE	0
 	i---
 	apiVersion: v1
 	kind: Pod
@@ -65,8 +106,8 @@
 	        - name: POSTGRES_PASSWORD
 	          value: sunny
 	...
-|3,0,2,1,16,0,1740826272,"i---","apiVersion: v1","kind: Pod","metadata:","  name: postgres-pod","  labels:","    app: db","    authour: sun","spec:","  containers:","    - name: mydb","      image: postgree","      evn:","        - name: POSTGRES_PASSWORD","          value: sunny","..."
-"3	LINE	0
+|3,0,6,1,16,0,1740826272,"i---","apiVersion: v1","kind: Pod","metadata:","  name: postgres-pod","  labels:","    app: db","    authour: sun","spec:","  containers:","    - name: mydb","      image: postgree","      evn:","        - name: POSTGRES_PASSWORD","          value: sunny","..."
+"7	LINE	0
 	ipiVersion: v1
 	kind: Pod
 	metadata:
@@ -79,8 +120,8 @@
 	                              - name: mynginx
 	                                      image: nginx
 	                                        ...
-|3,0,3,1,12,0,1740824342,"ipiVersion: v1","kind: Pod","metadata:","    name: nginx-pod","        labels:","              author: intelliqit","                    type: proxy","                    spec:","                        containers:","                              - name: mynginx","                                      image: nginx","                                        ..."
-"4	LINE	0
+|3,0,7,1,12,0,1740824342,"ipiVersion: v1","kind: Pod","metadata:","    name: nginx-pod","        labels:","              author: intelliqit","                    type: proxy","                    spec:","                        containers:","                              - name: mynginx","                                      image: nginx","                                        ..."
+"8	LINE	0
 	---
 	apiVersion: v1
 	kind: pod
@@ -94,8 +135,8 @@
 	    - name: mysql-pods
 	      image: mysql
 	...
-|3,0,4,1,13,0,1740824328,"---","apiVersion: v1","kind: pod","metadata:","  name: mysql-pod","  labels:","    type: mysqlserate","    author: sunny","spec:","  containers:","    - name: mysql-pods","      image: mysql","..."
-"5	LINE	0
+|3,0,8,1,13,0,1740824328,"---","apiVersion: v1","kind: pod","metadata:","  name: mysql-pod","  labels:","    type: mysqlserate","    author: sunny","spec:","  containers:","    - name: mysql-pods","      image: mysql","..."
+"9	LINE	0
 	ipiVersion: v1
 	kind: Pod
 	metadata:
@@ -108,309 +149,322 @@
 	                              - name: mynginx
 	                                      image: nginx
 	                                        ...
-|3,0,5,1,12,0,1740815096,"ipiVersion: v1","kind: Pod","metadata:","    name: nginx-pod","        labels:","              author: intelliqit","                    type: proxy","                    spec:","                        containers:","                              - name: mynginx","                                      image: nginx","                                        ..."
-"6	LINE	0
-	---
-	apiVersion: v1
-	kind: Pod
-	metadate:
-	  name: nginx-pod
-	  labels:
-	    type: webserver
-	spec:
-	  containers:
-	    - name: mynginx
-	      image: nginx
-	...
-|3,0,6,1,12,0,1740815080,"---","apiVersion: v1","kind: Pod","metadate:","  name: nginx-pod","  labels:","    type: webserver","spec:","  containers:","    - name: mynginx","      image: nginx","..."
-"7	LINE	0
-	piVersion: v1
-	kind: Pod
-	metadata:
-	    name: nginx-pod
-	        labels:
-	              author: intelliqit
-	                    type: proxy
-	                    spec:
-	                        containers:
-	                              - name: mynginx
-	                                      image: nginx
-	                                        ...
-|3,0,7,1,12,0,1740814721,"piVersion: v1","kind: Pod","metadata:","    name: nginx-pod","        labels:","              author: intelliqit","                    type: proxy","                    spec:","                        containers:","                              - name: mynginx","                                      image: nginx","                                        ..."
-"8	LINE	0
-	---
-	apiVersion: v1
-	kind: pod
-	metadata:
-	  name: nginx-pod
-	  labels:
-	    author: sunny
-	    type: webserver
-	spec:
-	  containers:
-	    - name: mynginx
-	      image: nginx
-	
-	
-	
-|3,0,8,1,15,0,1740814698,"---","apiVersion: v1","kind: pod","metadata:","  name: nginx-pod","  labels:","    author: sunny","    type: webserver","spec:","  containers:","    - name: mynginx","      image: nginx","","",""
-"9	LINE	0
-	       i ---
-	apiVersion: v1
-	kind: Pod
-	metadata:
-	  name: nginx-pod
-	  labels:
-	    author: intelliqit
-	    type: proxy
-	spec:
-	  containers:
-	    - name: mynginx
-	      image: nginx
-	...
-	  
-|3,0,9,1,14,0,1740814538,"       i ---","apiVersion: v1","kind: Pod","metadata:","  name: nginx-pod","  labels:","    author: intelliqit","    type: proxy","spec:","  containers:","    - name: mynginx","      image: nginx","...","  "
+|3,0,9,1,12,0,1740815096,"ipiVersion: v1","kind: Pod","metadata:","    name: nginx-pod","        labels:","              author: intelliqit","                    type: proxy","                    spec:","                        containers:","                              - name: mynginx","                                      image: nginx","                                        ..."
 "-	CHAR	0
-	apiVersion: v1
-|3,0,36,0,1,0,1740815002,"apiVersion: v1"
+	spec:
+|3,0,36,0,1,0,1740980717,"spec:"
 
 # File marks:
-'0  4  3  ~/pod2.yml
-|4,48,4,3,1740828241,"~/pod2.yml"
-'1  4  3  ~/pod2.yml
-|4,49,4,3,1740827587,"~/pod2.yml"
-'2  5  17  ~/pod2.yml
-|4,50,5,17,1740827547,"~/pod2.yml"
-'3  5  17  ~/pod2.yml
-|4,51,5,17,1740827547,"~/pod2.yml"
-'4  5  17  ~/pod2.yml
-|4,52,5,17,1740827547,"~/pod2.yml"
-'5  5  17  ~/pod2.yml
-|4,53,5,17,1740827547,"~/pod2.yml"
-'6  13  9  ~/pod2.yml
-|4,54,13,9,1740827473,"~/pod2.yml"
-'7  13  9  ~/pod2.yml
-|4,55,13,9,1740827473,"~/pod2.yml"
-'8  13  9  ~/pod2.yml
-|4,56,13,9,1740827473,"~/pod2.yml"
-'9  13  9  ~/pod2.yml
-|4,57,13,9,1740827473,"~/pod2.yml"
+'0  16  0  ~/pod4.yml
+|4,48,16,0,1740981778,"~/pod4.yml"
+'1  16  0  ~/pod4.yml
+|4,49,16,0,1740981536,"~/pod4.yml"
+'2  16  0  ~/pod3.yml
+|4,50,16,0,1740980926,"~/pod3.yml"
+'3  15  23  ~/pod3.yml
+|4,51,15,23,1740980863,"~/pod3.yml"
+'4  15  23  ~/pod3.yml
+|4,52,15,23,1740980863,"~/pod3.yml"
+'5  17  0  ~/pod3.yml
+|4,53,17,0,1740980743,"~/pod3.yml"
+'6  13  0  ~/pod3.yml
+|4,54,13,0,1740980743,"~/pod3.yml"
+'7  16  0  ~/pod3.yml
+|4,55,16,0,1740980743,"~/pod3.yml"
+'8  13  0  ~/pod3.yml
+|4,56,13,0,1740980743,"~/pod3.yml"
+'9  3  6  ~/pod3.yml
+|4,57,3,6,1740980668,"~/pod3.yml"
 
 # Jumplist (newest first):
--'  4  3  ~/pod2.yml
-|4,39,4,3,1740828241,"~/pod2.yml"
--'  4  3  ~/pod2.yml
-|4,39,4,3,1740827587,"~/pod2.yml"
--'  5  17  ~/pod2.yml
-|4,39,5,17,1740827569,"~/pod2.yml"
--'  5  17  ~/pod2.yml
-|4,39,5,17,1740827569,"~/pod2.yml"
--'  5  17  ~/pod2.yml
-|4,39,5,17,1740827547,"~/pod2.yml"
--'  13  9  ~/pod2.yml
-|4,39,13,9,1740827535,"~/pod2.yml"
--'  13  9  ~/pod2.yml
-|4,39,13,9,1740827535,"~/pod2.yml"
--'  13  9  ~/pod2.yml
-|4,39,13,9,1740827535,"~/pod2.yml"
--'  13  9  ~/pod2.yml
-|4,39,13,9,1740827473,"~/pod2.yml"
--'  15  0  ~/pod2.yml
-|4,39,15,0,1740827453,"~/pod2.yml"
--'  15  0  ~/pod2.yml
-|4,39,15,0,1740827453,"~/pod2.yml"
--'  15  0  ~/pod2.yml
-|4,39,15,0,1740827453,"~/pod2.yml"
--'  15  0  ~/pod2.yml
-|4,39,15,0,1740827453,"~/pod2.yml"
--'  15  0  ~/pod2.yml
-|4,39,15,0,1740827399,"~/pod2.yml"
--'  1  0  ~/pod2.yml
-|4,39,1,0,1740827224,"~/pod2.yml"
--'  1  0  ~/pod2.yml
-|4,39,1,0,1740827224,"~/pod2.yml"
--'  1  0  ~/pod2.yml
-|4,39,1,0,1740827224,"~/pod2.yml"
--'  1  0  ~/pod2.yml
-|4,39,1,0,1740827224,"~/pod2.yml"
--'  1  0  ~/pod2.yml
-|4,39,1,0,1740827224,"~/pod2.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826908,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  16  2  ~/pod-definition.yml
-|4,39,16,2,1740826434,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
--'  1  0  ~/pod-definition.yml
-|4,39,1,0,1740826283,"~/pod-definition.yml"
+-'  16  0  ~/pod4.yml
+|4,39,16,0,1740981778,"~/pod4.yml"
+-'  16  0  ~/pod4.yml
+|4,39,16,0,1740981536,"~/pod4.yml"
+-'  1  0  ~/pod4.yml
+|4,39,1,0,1740981346,"~/pod4.yml"
+-'  1  0  ~/pod4.yml
+|4,39,1,0,1740981346,"~/pod4.yml"
+-'  16  0  ~/pod3.yml
+|4,39,16,0,1740980926,"~/pod3.yml"
+-'  16  0  ~/pod3.yml
+|4,39,16,0,1740980926,"~/pod3.yml"
+-'  16  0  ~/pod3.yml
+|4,39,16,0,1740980926,"~/pod3.yml"
+-'  16  0  ~/pod3.yml
+|4,39,16,0,1740980926,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980895,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980895,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980895,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980895,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980863,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980863,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980863,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980863,"~/pod3.yml"
+-'  17  4  ~/pod3.yml
+|4,39,17,4,1740980771,"~/pod3.yml"
+-'  16  4  ~/pod3.yml
+|4,39,16,4,1740980771,"~/pod3.yml"
+-'  17  4  ~/pod3.yml
+|4,39,17,4,1740980771,"~/pod3.yml"
+-'  16  4  ~/pod3.yml
+|4,39,16,4,1740980771,"~/pod3.yml"
+-'  17  4  ~/pod3.yml
+|4,39,17,4,1740980771,"~/pod3.yml"
+-'  16  4  ~/pod3.yml
+|4,39,16,4,1740980771,"~/pod3.yml"
+-'  17  4  ~/pod3.yml
+|4,39,17,4,1740980771,"~/pod3.yml"
+-'  16  4  ~/pod3.yml
+|4,39,16,4,1740980771,"~/pod3.yml"
+-'  13  0  ~/pod3.yml
+|4,39,13,0,1740980743,"~/pod3.yml"
+-'  13  0  ~/pod3.yml
+|4,39,13,0,1740980743,"~/pod3.yml"
+-'  13  0  ~/pod3.yml
+|4,39,13,0,1740980743,"~/pod3.yml"
+-'  13  0  ~/pod3.yml
+|4,39,13,0,1740980743,"~/pod3.yml"
+-'  13  0  ~/pod3.yml
+|4,39,13,0,1740980743,"~/pod3.yml"
+-'  13  0  ~/pod3.yml
+|4,39,13,0,1740980743,"~/pod3.yml"
+-'  13  0  ~/pod3.yml
+|4,39,13,0,1740980743,"~/pod3.yml"
+-'  13  0  ~/pod3.yml
+|4,39,13,0,1740980743,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980700,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980700,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980700,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980700,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980700,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980700,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980700,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980700,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980700,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980700,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980700,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980700,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980668,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980668,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980668,"~/pod3.yml"
+-'  3  6  ~/pod3.yml
+|4,39,3,6,1740980668,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980658,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980658,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980658,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980658,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980658,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980658,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980658,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980658,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980544,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980544,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980544,"~/pod3.yml"
+-'  15  23  ~/pod3.yml
+|4,39,15,23,1740980544,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  1  0  ~/pod3.yml
+|4,39,1,0,1740980391,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  11  20  ~/pod3.yml
+|4,39,11,20,1740980342,"~/pod3.yml"
+-'  5  9  ~/pod3.yml
+|4,39,5,9,1740980319,"~/pod3.yml"
+-'  5  9  ~/pod3.yml
+|4,39,5,9,1740980319,"~/pod3.yml"
+-'  5  9  ~/pod3.yml
+|4,39,5,9,1740980319,"~/pod3.yml"
+-'  5  9  ~/pod3.yml
+|4,39,5,9,1740980319,"~/pod3.yml"
 
 # History of marks within files (newest to oldest):
 
+> ~/pod4.yml
+	*	1740981766	0
+	"	16	0
+	^	16	0
+	.	16	0
+	+	9	5
+	+	10	13
+	+	12	19
+	+	17	0
+	+	13	12
+	+	16	0
+
+> ~/pod3.yml
+	*	1740980925	0
+	"	16	0
+	^	16	0
+	.	16	0
+	+	1	15
+	+	1	5
+	+	1	0
+	+	1	11
+	+	1	10
+	+	1	3
+	+	9	5
+	+	17	28
+	+	17	2
+	+	17	23
+	+	3	6
+	+	9	4
+	+	17	14
+	+	17	0
+	+	17	16
+	+	9	0
+	+	17	0
+	+	10	13
+	+	11	21
+	+	15	23
+	+	8	18
+	+	16	0
+
 > ~/pod2.yml
-	*	1740828030	0
-	"	4	3
-	^	4	4
-	.	4	3
-	+	2	11
-	+	8	5
-	+	15	0
-	+	13	9
-	+	5	18
-	+	4	3
+	*	1740979759	0
+	"	18	0
+	^	18	0
+	.	18	0
+	+	29	11
+	+	35	5
+	+	42	0
+	+	40	9
+	+	32	18
+	+	31	3
+	+	21	9
+	+	27	21
+	+	29	0
+	+	29	10
+	+	29	21
+	+	29	0
+	+	19	11
+	+	20	6
+	+	29	0
+	+	28	0
+	+	1	0
+	+	19	0
+	+	20	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	24	0
+	+	25	0
+	+	26	0
+	+	27	0
+	+	28	0
+	+	9	5
+	+	18	0
+
+> ~/pod1.yml
+	*	1740978579	0
+	"	13	0
+	^	13	0
+	.	13	0
+	+	9	5
+	+	12	13
+	+	11	18
+	+	5	8
+	+	13	0
 
 > ~/pod-definition.yml
 	*	1740826876	0

@@ -2,14 +2,27 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: myjenk-pod
+  name: postgres-pod
   labels:
     author: sun
+    type: mydb
 spec:
   containers:
-    - name: myjenk
-      image: jenkins/jenkins
-      ports:
-        - containerPort: 8080
-          hostPort: 8080
-...
+    - name: mypostgres
+      image: postgres
+      env:
+        - name: POSTGRES_PASSWORD
+          value: sunny
+        - name: POSTGRES_USER
+          value: sunny
+...  
+
+
+
+
+
+
+
+
+
+

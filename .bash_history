@@ -208,3 +208,89 @@ git push -u https://github.com/sunnyramagiri/k8s.git
 git push origin master
 git push origin main
 git init
+git add .
+git commit -m "pods"
+git push origin main
+git push origin master
+git add pod2.yml
+git add pod-definition.yml
+git add pods.yml
+git status
+git commit -u "28.2"
+git commit -u "28/2"
+git commit -u "28feb"
+git commit -u "pod"
+git commit -m "28feb"
+git status
+git push https://github.com/sunnyramagiri/k8s.git
+gcloud container clusters get-credentials cluster-1 --region us-central1 --project angular-radar-452012-a0
+kubectl get nodes
+kubectl get pods -o wide
+ls
+rm -rf README-cloudshell.txt 
+ls
+rm -rf pod-definition.yml 
+rm -rf pods.yml 
+rm -rf pod2.yml 
+ls
+vim pod1.yml
+kubectl apply -f pod1.yml 
+kubectl get pods 
+kubectl get pods -o wide
+kubectl get node -o wide 
+kubectl describe nginx-pod | less
+kubectl describe nginx-pod 
+kubectl describe pods nginx-pod | less
+kubectl delete --all pods --nginx-pod
+kubectl delete --all pods 
+kubectl get pods
+kubectl get pods -o wide
+vim pod2.yml
+kubectl apply -f pod2.yml 
+vim pod2.yml
+kubectl apply -f pod2.yml 
+vim pod2.yml
+kubectl apply -f pod2.yml 
+vim pod2.yml
+kubectl apply -f pod2.yml 
+kubectl get pods 
+kubectl get pods -o wide
+kubectl get node
+kubectl get node -o wide
+kubectl delete all pods
+kubectl delete --all pods
+ls
+vim pod3.yml 
+kubectl apply -f pod3.yml 
+vim pod3.yml 
+kubectl apply -f pod3.yml 
+vim pod3.yml 
+kubectl apply -f pod3.yml 
+vim pod3.yml 
+kubectl apply -f pod3.yml 
+vim pod3.yml 
+kubectl apply -f pod3.yml 
+vim pod3.yml 
+kubectl apply -f pod3.yml 
+vim pod3.yml 
+kubectl apply -f pod3.yml 
+vim pod3.yml 
+kubectl apply -f pod3.yml 
+vim pod3.yml 
+kubectl apply -f pod3.yml 
+kubectl get pods 
+kubectl get pods -o wide
+kubectl get node -o wide 
+ipconfig /flushdns
+kubectl delete --all pods
+ls
+vim pod4.yml
+kubectl apply -f pod4.yml 
+kubectl get pods -o wide
+kubectl get node -o wide
+vim pod4.yml
+kubectl gte nods
+kubectl gte nodes
+kubectl get nodes
+kubectl delete --all pods
+git init

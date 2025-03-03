@@ -12,3 +12,4 @@
 2025-03-01 09:48:05.504 [info] [127.0.0.1][e5b53def][ExtensionHostConnection] New connection established.
 2025-03-01 09:48:05.508 [info] [127.0.0.1][e5b53def][ExtensionHostConnection] <1426> Launched Extension Host Process.
 2025-03-01 09:53:05.628 [info] [127.0.0.1][520ea79c][ExtensionHostConnection] <1235> Extension Host Process exited with code: 0, signal: null.
+2025-03-01 11:50:08.819 [info] [127.0.0.1][53ee47bb][ManagementConnection] The client has disconnected, will wait for reconnection 3h before disposing...
