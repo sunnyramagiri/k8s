@@ -294,3 +294,126 @@ kubectl gte nodes
 kubectl get nodes
 kubectl delete --all pods
 git init
+git add .
+git commit -m "day1"
+git remote add origin https://github.com/sunnyramagiri/k8s.git
+git push -u origin master
+vim multi-container.yml
+kubectl apply -f multi-container.yml 
+vim multi-container.yml
+kubectl apply -f multi-container.yml 
+vim multi-container.yml
+kubectl apply -f multi-container.yml 
+mv multi-container.yml multi.yml
+ls
+kubectl apply -f multi.yml
+vim multi-container.yml
+ls
+rm -f multi-container.yml 
+ls
+vim multi.yml 
+kubectl apply -f multi.yml
+vim multi.yml 
+kubectl apply -f multi.yml
+vim multi.yml 
+kubectl apply -f multi.yml
+vim multi.yml 
+kubectl apply -f multi.yml
+vim multi.yml 
+kubectl apply -f multi.yml
+vim multi.yml 
+kubectl apply -f multi.yml
+kubectl get crds
+kubectl apply -f multi.yml
+kubectl version --short
+kubectl get crds
+kubectl version --short
+vim multi.yml 
+kubectl apply -f multi.yml 
+kubectl get CRDs
+vim multi.yml 
+kubectl get CRDs
+kubectl install CRDs
+kubectl apply -f multi.yml 
+vim multi.yml 
+kubectl apply -f multi.yml 
+vim multi.yml 
+kubectl apply -f multi.yml 
+vim multi.yml 
+kubectl apply -f multi.yml 
+vim multi.yml 
+kubectl apply -f multi.yml 
+vim multi.yml 
+kubectl apply -f multi.yml 
+git init
+git add multi.yml 
+git commit -m "multi"
+git push
+gcloud container clusters get-credentials cluster-1 --region us-central1 --project angular-radar-452012-a0
+ls
+vim pod3.yml 
+vim pod5.yml
+kubectl get pods
+vim namespace.yml
+kubectl get ns
+kubectl apply -f namespace.yml 
+kubectl get ns
+kubectl apply -f pod5.yml 
+vim pod5.yml 
+kubectl apply -f pod5.yml 
+kubectl get pods
+kubectl get pods -n test-ns
+kubectl describe pods mytomee  -n test-ns | less
+kubectl get pods -o wide 
+kubectl get pods -o wide - n test-ns
+kubectl get pods -o wide -n test-ns
+kubectl get nods -o wide -n test-ns
+kubectl get nodes -o wide -n test-ns
+kubectl get pods -o wide -n test-ns
+kubectl get nodes -o wide -n test-ns
+gcloud compute firewall-rules create myport --allow tcp:9090
+kubectl delete -all pod5.yml 
+kubectl delete --all pod5.yml 
+kubectl delete -f pod5.yml 
+kubectl delete -f namespace.yml 
+kubectl get pods -o wide -n ns
+kubectl get pods -o wide -n test-ns
+kubectl get pods -o wide -n mytomee
+kubectl get ns
+vim replication-controller.yml
+kubectl apply -f replication-controller.yml 
+vim replication-controller.yml
+kubectl apply -f replication-controller.yml 
+kubectl get pods 
+kubectl get nodes -o wide 
+kubectl get pods -o wide
+cat /var/jenkins_home/secrets/initialAdminPassword
+sudo vim /var/jenkins_home/secrets/initialAdminPassword
+docker exce jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+kubectl exce jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+kubectl jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+gcloud config set account ACCOUNT
+ls
+vim replication-controller.yml 
+kubectl logs myjenkins 
+gcloud auth login
+kubectl jenkins cat /var/jenkins_home/secrets/initialAdminPassword
+kubectl exec -it myjenkins
+gcloud auth login
+gcloud config set project PROJECT_ID
+gcloud auth list
+kubectl get pods -n myjenkins
+kubectl get pods  myjenkins
+vim replication-controller.yml 
+kubectl get pods myjenkins
+kubectl logs myjenkins
+kubectl logs replication-controller.yml myjenkins
+cd /var/jenkins_home/secrets/initialAdminPassword
+vim /var/jenkins_home/secrets/initialAdminPassword
+susy\\
+sudo cat /var/jenkins_home/secrets/initialAdminPassword
+cd .ssh
+ls -ls
+sudo su -
+kubectl get pods
+kubectl logs myjenkins-5cr2f

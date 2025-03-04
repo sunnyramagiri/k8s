@@ -11,10 +11,12 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
-:wq
-|2,0,1740981778,,"wq"
 :q!
-|2,0,1740817533,,"q!"
+|2,0,1741069109,,"q!"
+:wq
+|2,0,1741069104,,"wq"
+:WQ
+|2,0,1741065618,,"WQ"
 
 # Search String History (newest to oldest):
 
@@ -25,7 +27,35 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
+"1	LINE	0
+	      
+|3,0,1,1,1,0,1740984480,"      "
+"2	LINE	0
+	`---
+	apiVersion: v1
+	kind: Pod
+	metadata:
+	  name:
+	    labels:
+	      authour: multi
+	      type: all
+	spec:
+	  containers:
+	    - name: mydb
+	      image: mysql
+	      env:
+	        - name: MYSQL_USER
+	          value: sunny
+	        - name: MYSQL_PASSWORD
+	          value: sunny
+	    - name: webserver
+	      image: jenkins/jenkins
+	      ports:
+	        - containerPort: 8080
+	          hostPort: 3000
+	...
+|3,0,2,1,23,0,1740983133,"`---","apiVersion: v1","kind: Pod","metadata:","  name:","    labels:","      authour: multi","      type: all","spec:","  containers:","    - name: mydb","      image: mysql","      env:","        - name: MYSQL_USER","          value: sunny","        - name: MYSQL_PASSWORD","          value: sunny","    - name: webserver","      image: jenkins/jenkins","      ports:","        - containerPort: 8080","          hostPort: 3000","..."
+"3	LINE	0
 	    icontainers: 
 	    - name: myjenkins
 	      image: jenkins/jenkins
@@ -33,8 +63,8 @@
 	        - containorPort: 8080
 	          hostPost: 9090
 	...
-|3,1,1,1,7,0,1740980771,"    icontainers: ","    - name: myjenkins","      image: jenkins/jenkins","      ports:","        - containorPort: 8080","          hostPost: 9090","..."
-"2	LINE	0
+|3,0,3,1,7,0,1740980771,"    icontainers: ","    - name: myjenkins","      image: jenkins/jenkins","      ports:","        - containorPort: 8080","          hostPost: 9090","..."
+"4	LINE	0
 	---
 	apiVersion: V1
 	kind: Pod
@@ -51,12 +81,12 @@
 	        - containorPort: 8080
 	          hostPort: 9090
 	...
-|3,0,2,1,16,0,1740980391,"---","apiVersion: V1","kind: Pod","metadata:","  name: myjenkins","  labels:","    type: ci/cd","    author: suny","spec:","  containers:","    - name: myjenkins","      image: jenkins/jenkins","      ports:","        - containorPort: 8080","          hostPort: 9090","..."
-"3	LINE	0
+|3,0,4,1,16,0,1740980391,"---","apiVersion: V1","kind: Pod","metadata:","  name: myjenkins","  labels:","    type: ci/cd","    author: suny","spec:","  containers:","    - name: myjenkins","      image: jenkins/jenkins","      ports:","        - containorPort: 8080","          hostPort: 9090","..."
+"5	LINE	0
 	metadata:
 	  labels:
-|3,0,3,1,2,0,1740979514,"metadata:","  labels:"
-"4	LINE	0
+|3,0,5,1,2,0,1740979514,"metadata:","  labels:"
+"6	LINE	0
 	      env:
 	        - name: POSTGRES_PASSWORD
 	          value: sunny
@@ -65,8 +95,8 @@
 	        - name: POSTGRES_DB
 	          value: mydb
 	...
-|3,0,4,1,8,0,1740979338,"      env:","        - name: POSTGRES_PASSWORD","          value: sunny","        - name: POSTGRES_USER","          value: myuser","        - name: POSTGRES_DB","          value: mydb","..."
-"5	LINE	0
+|3,0,6,1,8,0,1740979338,"      env:","        - name: POSTGRES_PASSWORD","          value: sunny","        - name: POSTGRES_USER","          value: myuser","        - name: POSTGRES_DB","          value: mydb","..."
+"7	LINE	0
 	-piVersion: v1
 	kind: Pod
 	metadata:
@@ -86,10 +116,10 @@
 	                                                                                                    - name: POSTGRES_DB
 	                                                                                                                value: mydb
 	                                                                                                                  ...
-|3,0,5,1,19,0,1740826283,"-piVersion: v1","kind: Pod","metadata:","    name: postgres-pod","        labels:","              app: db","                    author: intelliqit","                    spec:","                        containers:","                              - name: mydb","                                      image: postgres","                                              env:",>83
+|3,0,7,1,19,0,1740826283,"-piVersion: v1","kind: Pod","metadata:","    name: postgres-pod","        labels:","              app: db","                    author: intelliqit","                    spec:","                        containers:","                              - name: mydb","                                      image: postgres","                                              env:",>83
 |<"                                                        - name: POSTGRES_PASSWORD","                                                                    value: intelliqit","                                                                              - name: POSTGRES_USER","                                                                                          value: myuser",>121
 |<"                                                                                                    - name: POSTGRES_DB","                                                                                                                value: mydb","                                                                                                                  ..."
-"6	LINE	0
+"8	LINE	0
 	i---
 	apiVersion: v1
 	kind: Pod
@@ -106,36 +136,7 @@
 	        - name: POSTGRES_PASSWORD
 	          value: sunny
 	...
-|3,0,6,1,16,0,1740826272,"i---","apiVersion: v1","kind: Pod","metadata:","  name: postgres-pod","  labels:","    app: db","    authour: sun","spec:","  containers:","    - name: mydb","      image: postgree","      evn:","        - name: POSTGRES_PASSWORD","          value: sunny","..."
-"7	LINE	0
-	ipiVersion: v1
-	kind: Pod
-	metadata:
-	    name: nginx-pod
-	        labels:
-	              author: intelliqit
-	                    type: proxy
-	                    spec:
-	                        containers:
-	                              - name: mynginx
-	                                      image: nginx
-	                                        ...
-|3,0,7,1,12,0,1740824342,"ipiVersion: v1","kind: Pod","metadata:","    name: nginx-pod","        labels:","              author: intelliqit","                    type: proxy","                    spec:","                        containers:","                              - name: mynginx","                                      image: nginx","                                        ..."
-"8	LINE	0
-	---
-	apiVersion: v1
-	kind: pod
-	metadata:
-	  name: mysql-pod
-	  labels:
-	    type: mysqlserate
-	    author: sunny
-	spec:
-	  containers:
-	    - name: mysql-pods
-	      image: mysql
-	...
-|3,0,8,1,13,0,1740824328,"---","apiVersion: v1","kind: pod","metadata:","  name: mysql-pod","  labels:","    type: mysqlserate","    author: sunny","spec:","  containers:","    - name: mysql-pods","      image: mysql","..."
+|3,0,8,1,16,0,1740826272,"i---","apiVersion: v1","kind: Pod","metadata:","  name: postgres-pod","  labels:","    app: db","    authour: sun","spec:","  containers:","    - name: mydb","      image: postgree","      evn:","        - name: POSTGRES_PASSWORD","          value: sunny","..."
 "9	LINE	0
 	ipiVersion: v1
 	kind: Pod
@@ -148,252 +149,279 @@
 	                        containers:
 	                              - name: mynginx
 	                                      image: nginx
-	                                        ...
-|3,0,9,1,12,0,1740815096,"ipiVersion: v1","kind: Pod","metadata:","    name: nginx-pod","        labels:","              author: intelliqit","                    type: proxy","                    spec:","                        containers:","                              - name: mynginx","                                      image: nginx","                                        ..."
-"-	CHAR	0
-	spec:
-|3,0,36,0,1,0,1740980717,"spec:"
+	                                        ...
+|3,0,9,1,12,0,1740824342,"ipiVersion: v1","kind: Pod","metadata:","    name: nginx-pod","        labels:","              author: intelliqit","                    type: proxy","                    spec:","                        containers:","                              - name: mynginx","                                      image: nginx","                                        ..."
+""-	CHAR	0
+	 myjenkins
+|3,1,36,0,1,0,1741067518," myjenkins"
 
 # File marks:
-'0  16  0  ~/pod4.yml
-|4,48,16,0,1740981778,"~/pod4.yml"
-'1  16  0  ~/pod4.yml
-|4,49,16,0,1740981536,"~/pod4.yml"
-'2  16  0  ~/pod3.yml
-|4,50,16,0,1740980926,"~/pod3.yml"
-'3  15  23  ~/pod3.yml
-|4,51,15,23,1740980863,"~/pod3.yml"
-'4  15  23  ~/pod3.yml
-|4,52,15,23,1740980863,"~/pod3.yml"
-'5  17  0  ~/pod3.yml
-|4,53,17,0,1740980743,"~/pod3.yml"
-'6  13  0  ~/pod3.yml
-|4,54,13,0,1740980743,"~/pod3.yml"
-'7  16  0  ~/pod3.yml
-|4,55,16,0,1740980743,"~/pod3.yml"
-'8  13  0  ~/pod3.yml
-|4,56,13,0,1740980743,"~/pod3.yml"
-'9  3  6  ~/pod3.yml
-|4,57,3,6,1740980668,"~/pod3.yml"
+'0  1  0  /var/jenkins_home/secrets/initialAdminPassword
+|4,48,1,0,1741069109,"/var/jenkins_home/secrets/initialAdminPassword"
+'1  18  24  ~/replication-controller.yml
+|4,49,18,24,1741068590,"~/replication-controller.yml"
+'2  18  24  ~/replication-controller.yml
+|4,50,18,24,1741068167,"~/replication-controller.yml"
+'3  18  24  ~/replication-controller.yml
+|4,51,18,24,1741067531,"~/replication-controller.yml"
+'4  18  24  ~/replication-controller.yml
+|4,52,18,24,1741067531,"~/replication-controller.yml"
+'5  23  0  ~/replication-controller.yml
+|4,53,23,0,1741067417,"~/replication-controller.yml"
+'6  23  0  ~/replication-controller.yml
+|4,54,23,0,1741067417,"~/replication-controller.yml"
+'7  23  0  ~/replication-controller.yml
+|4,55,23,0,1741067417,"~/replication-controller.yml"
+'8  23  0  ~/replication-controller.yml
+|4,56,23,0,1741067417,"~/replication-controller.yml"
+'9  23  0  ~/replication-controller.yml
+|4,57,23,0,1741067417,"~/replication-controller.yml"
 
 # Jumplist (newest first):
--'  16  0  ~/pod4.yml
-|4,39,16,0,1740981778,"~/pod4.yml"
--'  16  0  ~/pod4.yml
-|4,39,16,0,1740981536,"~/pod4.yml"
--'  1  0  ~/pod4.yml
-|4,39,1,0,1740981346,"~/pod4.yml"
--'  1  0  ~/pod4.yml
-|4,39,1,0,1740981346,"~/pod4.yml"
--'  16  0  ~/pod3.yml
-|4,39,16,0,1740980926,"~/pod3.yml"
--'  16  0  ~/pod3.yml
-|4,39,16,0,1740980926,"~/pod3.yml"
--'  16  0  ~/pod3.yml
-|4,39,16,0,1740980926,"~/pod3.yml"
--'  16  0  ~/pod3.yml
-|4,39,16,0,1740980926,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980895,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980895,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980895,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980895,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980863,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980863,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980863,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980863,"~/pod3.yml"
--'  17  4  ~/pod3.yml
-|4,39,17,4,1740980771,"~/pod3.yml"
--'  16  4  ~/pod3.yml
-|4,39,16,4,1740980771,"~/pod3.yml"
--'  17  4  ~/pod3.yml
-|4,39,17,4,1740980771,"~/pod3.yml"
--'  16  4  ~/pod3.yml
-|4,39,16,4,1740980771,"~/pod3.yml"
--'  17  4  ~/pod3.yml
-|4,39,17,4,1740980771,"~/pod3.yml"
--'  16  4  ~/pod3.yml
-|4,39,16,4,1740980771,"~/pod3.yml"
--'  17  4  ~/pod3.yml
-|4,39,17,4,1740980771,"~/pod3.yml"
--'  16  4  ~/pod3.yml
-|4,39,16,4,1740980771,"~/pod3.yml"
--'  13  0  ~/pod3.yml
-|4,39,13,0,1740980743,"~/pod3.yml"
--'  13  0  ~/pod3.yml
-|4,39,13,0,1740980743,"~/pod3.yml"
--'  13  0  ~/pod3.yml
-|4,39,13,0,1740980743,"~/pod3.yml"
--'  13  0  ~/pod3.yml
-|4,39,13,0,1740980743,"~/pod3.yml"
--'  13  0  ~/pod3.yml
-|4,39,13,0,1740980743,"~/pod3.yml"
--'  13  0  ~/pod3.yml
-|4,39,13,0,1740980743,"~/pod3.yml"
--'  13  0  ~/pod3.yml
-|4,39,13,0,1740980743,"~/pod3.yml"
--'  13  0  ~/pod3.yml
-|4,39,13,0,1740980743,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980700,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980700,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980700,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980700,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980700,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980700,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980700,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980700,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980700,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980700,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980700,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980700,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980668,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980668,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980668,"~/pod3.yml"
--'  3  6  ~/pod3.yml
-|4,39,3,6,1740980668,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980658,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980658,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980658,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980658,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980658,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980658,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980658,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980658,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980544,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980544,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980544,"~/pod3.yml"
--'  15  23  ~/pod3.yml
-|4,39,15,23,1740980544,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  1  0  ~/pod3.yml
-|4,39,1,0,1740980391,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  11  20  ~/pod3.yml
-|4,39,11,20,1740980342,"~/pod3.yml"
--'  5  9  ~/pod3.yml
-|4,39,5,9,1740980319,"~/pod3.yml"
--'  5  9  ~/pod3.yml
-|4,39,5,9,1740980319,"~/pod3.yml"
--'  5  9  ~/pod3.yml
-|4,39,5,9,1740980319,"~/pod3.yml"
--'  5  9  ~/pod3.yml
-|4,39,5,9,1740980319,"~/pod3.yml"
+-'  1  0  /var/jenkins_home/secrets/initialAdminPassword
+|4,39,1,0,1741069109,"/var/jenkins_home/secrets/initialAdminPassword"
+-'  18  24  ~/replication-controller.yml
+|4,39,18,24,1741068590,"~/replication-controller.yml"
+-'  18  24  ~/replication-controller.yml
+|4,39,18,24,1741068590,"~/replication-controller.yml"
+-'  18  24  ~/replication-controller.yml
+|4,39,18,24,1741068167,"~/replication-controller.yml"
+-'  18  24  ~/replication-controller.yml
+|4,39,18,24,1741068167,"~/replication-controller.yml"
+-'  18  24  ~/replication-controller.yml
+|4,39,18,24,1741067531,"~/replication-controller.yml"
+-'  18  24  ~/replication-controller.yml
+|4,39,18,24,1741067531,"~/replication-controller.yml"
+-'  23  0  ~/replication-controller.yml
+|4,39,23,0,1741067455,"~/replication-controller.yml"
+-'  23  0  ~/replication-controller.yml
+|4,39,23,0,1741067455,"~/replication-controller.yml"
+-'  23  0  ~/replication-controller.yml
+|4,39,23,0,1741067455,"~/replication-controller.yml"
+-'  23  0  ~/replication-controller.yml
+|4,39,23,0,1741067455,"~/replication-controller.yml"
+-'  23  0  ~/replication-controller.yml
+|4,39,23,0,1741067455,"~/replication-controller.yml"
+-'  23  0  ~/replication-controller.yml
+|4,39,23,0,1741067455,"~/replication-controller.yml"
+-'  23  0  ~/replication-controller.yml
+|4,39,23,0,1741067417,"~/replication-controller.yml"
+-'  23  0  ~/replication-controller.yml
+|4,39,23,0,1741067417,"~/replication-controller.yml"
+-'  1  0  ~/replication-controller.yml
+|4,39,1,0,1741066996,"~/replication-controller.yml"
+-'  1  0  ~/replication-controller.yml
+|4,39,1,0,1741066996,"~/replication-controller.yml"
+-'  1  0  ~/replication-controller.yml
+|4,39,1,0,1741066996,"~/replication-controller.yml"
+-'  1  0  ~/replication-controller.yml
+|4,39,1,0,1741066996,"~/replication-controller.yml"
+-'  1  0  ~/replication-controller.yml
+|4,39,1,0,1741066996,"~/replication-controller.yml"
+-'  1  0  ~/replication-controller.yml
+|4,39,1,0,1741066996,"~/replication-controller.yml"
+-'  1  0  ~/replication-controller.yml
+|4,39,1,0,1741066996,"~/replication-controller.yml"
+-'  1  0  ~/replication-controller.yml
+|4,39,1,0,1741066996,"~/replication-controller.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  9  3  ~/pod5.yml
+|4,39,9,3,1741065623,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  17  0  ~/pod5.yml
+|4,39,17,0,1741065512,"~/pod5.yml"
+-'  6  0  ~/namespace.yml
+|4,39,6,0,1741065125,"~/namespace.yml"
+-'  6  0  ~/namespace.yml
+|4,39,6,0,1741065125,"~/namespace.yml"
+-'  6  0  ~/namespace.yml
+|4,39,6,0,1741065125,"~/namespace.yml"
+-'  6  0  ~/namespace.yml
+|4,39,6,0,1741065125,"~/namespace.yml"
+-'  6  0  ~/namespace.yml
+|4,39,6,0,1741065125,"~/namespace.yml"
+-'  6  0  ~/namespace.yml
+|4,39,6,0,1741065125,"~/namespace.yml"
+-'  6  0  ~/namespace.yml
+|4,39,6,0,1741065125,"~/namespace.yml"
+-'  6  0  ~/namespace.yml
+|4,39,6,0,1741065125,"~/namespace.yml"
+-'  6  0  ~/namespace.yml
+|4,39,6,0,1741065125,"~/namespace.yml"
+-'  6  0  ~/namespace.yml
+|4,39,6,0,1741065125,"~/namespace.yml"
+-'  6  0  ~/namespace.yml
+|4,39,6,0,1741065125,"~/namespace.yml"
+-'  6  0  ~/namespace.yml
+|4,39,6,0,1741065125,"~/namespace.yml"
+-'  6  0  ~/namespace.yml
+|4,39,6,0,1741065125,"~/namespace.yml"
 
 # History of marks within files (newest to oldest):
 
-> ~/pod4.yml
-	*	1740981766	0
-	"	16	0
-	^	16	0
-	.	16	0
+> /var/jenkins_home/secrets/initialAdminPassword
+	*	1741069103	0
+	"	1	0
+
+> ~/replication-controller.yml
+	*	1741068586	0
+	"	18	24
+	^	18	25
+	.	18	16
+	+	3	26
+	+	5	17
+	+	6	9
 	+	9	5
-	+	10	13
-	+	12	19
-	+	17	0
+	+	16	9
+	+	20	16
+	+	23	0
+	+	3	6
 	+	13	12
-	+	16	0
+	+	18	16
+
+> ~/pod5.yml
+	*	1741065618	0
+	"	9	3
+	^	9	4
+	.	9	3
+	+	6	20
+	+	9	14
+	+	17	0
+	+	8	3
+	+	9	3
+
+> ~/namespace.yml
+	*	1741065124	0
+	"	6	0
+	^	6	0
+	.	6	0
+	+	5	15
+	+	6	0
 
 > ~/pod3.yml
-	*	1740980925	0
+	*	1741064225	0
 	"	16	0
 	^	16	0
 	.	16	0
@@ -418,6 +446,70 @@
 	+	11	21
 	+	15	23
 	+	8	18
+	+	16	0
+
+> ~/multi.yml
+	*	1740984540	0
+	"	12	23
+	^	12	24
+	.	12	24
+	+	6	0
+	+	7	0
+	+	10	35
+	+	10	48
+	+	1	0
+	+	18	0
+	+	3	9
+	+	7	2
+	+	3	9
+	+	13	12
+	+	3	9
+	+	4	7
+	+	13	0
+	+	14	0
+	+	10	34
+	+	10	47
+	+	10	48
+	+	1	2
+	+	18	2
+	+	10	50
+	+	10	42
+	+	10	18
+	+	10	25
+	+	10	11
+	+	9	17
+	+	12	24
+
+> ~/multi-container.yml
+	*	1740983504	0
+	"	1	0
+	^	23	0
+	.	23	0
+	+	1	27
+	+	1	0
+	+	1	26
+	+	1	21
+	+	1	0
+	+	1	20
+	+	1	14
+	+	1	3
+	+	2	14
+	+	9	5
+	+	14	26
+	+	15	31
+	+	18	21
+	+	23	0
+
+> ~/pod4.yml
+	*	1740981766	0
+	"	16	0
+	^	16	0
+	.	16	0
+	+	9	5
+	+	10	13
+	+	12	19
+	+	17	0
+	+	13	12
 	+	16	0
 
 > ~/pod2.yml
