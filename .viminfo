@@ -11,10 +11,10 @@
 # hlsearch on (H) or off (h):
 ~h
 # Command Line History (newest to oldest):
-:q!
-|2,0,1741069109,,"q!"
 :wq
-|2,0,1741069104,,"wq"
+|2,0,1741175841,,"wq"
+:q!
+|2,0,1741174313,,"q!"
 :WQ
 |2,0,1741065618,,"WQ"
 
@@ -28,358 +28,553 @@
 
 # Registers:
 "1	LINE	0
-	      
-|3,0,1,1,1,0,1740984480,"      "
+	
+	
+|3,0,1,1,2,0,1741175145,"",""
 "2	LINE	0
-	`---
-	apiVersion: v1
-	kind: Pod
-	metadata:
-	  name:
-	    labels:
-	      authour: multi
-	      type: all
-	spec:
-	  containers:
-	    - name: mydb
-	      image: mysql
-	      env:
-	        - name: MYSQL_USER
-	          value: sunny
-	        - name: MYSQL_PASSWORD
-	          value: sunny
-	    - name: webserver
-	      image: jenkins/jenkins
-	      ports:
-	        - containerPort: 8080
-	          hostPort: 3000
-	...
-|3,0,2,1,23,0,1740983133,"`---","apiVersion: v1","kind: Pod","metadata:","  name:","    labels:","      authour: multi","      type: all","spec:","  containers:","    - name: mydb","      image: mysql","      env:","        - name: MYSQL_USER","          value: sunny","        - name: MYSQL_PASSWORD","          value: sunny","    - name: webserver","      image: jenkins/jenkins","      ports:","        - containerPort: 8080","          hostPort: 3000","..."
+	              hostPort: 9090
+|3,0,2,1,1,0,1741175143,"              hostPort: 9090"
 "3	LINE	0
-	    icontainers: 
-	    - name: myjenkins
-	      image: jenkins/jenkins
-	      ports:
-	        - containorPort: 8080
-	          hostPost: 9090
-	...
-|3,0,3,1,7,0,1740980771,"    icontainers: ","    - name: myjenkins","      image: jenkins/jenkins","      ports:","        - containorPort: 8080","          hostPost: 9090","..."
+	            - containerPort: 8080
+|3,0,3,1,1,0,1741175143,"            - containerPort: 8080"
 "4	LINE	0
-	---
-	apiVersion: V1
-	kind: Pod
-	metadata:
-	  name: myjenkins
-	  labels:
-	    type: ci/cd
-	    author: suny
-	spec:
-	  containers:
-	    - name: myjenkins
-	      image: jenkins/jenkins
-	      ports:
-	        - containorPort: 8080
-	          hostPort: 9090
-	...
-|3,0,4,1,16,0,1740980391,"---","apiVersion: V1","kind: Pod","metadata:","  name: myjenkins","  labels:","    type: ci/cd","    author: suny","spec:","  containers:","    - name: myjenkins","      image: jenkins/jenkins","      ports:","        - containorPort: 8080","          hostPort: 9090","..."
+	          ports:
+|3,0,4,1,1,0,1741175142,"          ports:"
 "5	LINE	0
-	metadata:
-	  labels:
-|3,0,5,1,2,0,1740979514,"metadata:","  labels:"
+	          image: jenkins/jenkins
+|3,0,5,1,1,0,1741175142,"          image: jenkins/jenkins"
 "6	LINE	0
-	      env:
-	        - name: POSTGRES_PASSWORD
-	          value: sunny
-	        - name: POSTGRES_USER
-	          value: myuser
-	        - name: POSTGRES_DB
-	          value: mydb
-	...
-|3,0,6,1,8,0,1740979338,"      env:","        - name: POSTGRES_PASSWORD","          value: sunny","        - name: POSTGRES_USER","          value: myuser","        - name: POSTGRES_DB","          value: mydb","..."
+	        - name: myjenkins
+|3,0,6,1,1,0,1741175142,"        - name: myjenkins"
 "7	LINE	0
-	-piVersion: v1
-	kind: Pod
-	metadata:
-	    name: postgres-pod
-	        labels:
-	              app: db
-	                    author: intelliqit
-	                    spec:
-	                        containers:
-	                              - name: mydb
-	                                      image: postgres
-	                                              env:
-	                                                        - name: POSTGRES_PASSWORD
-	                                                                    value: intelliqit
-	                                                                              - name: POSTGRES_USER
-	                                                                                          value: myuser
-	                                                                                                    - name: POSTGRES_DB
-	                                                                                                                value: mydb
-	                                                                                                                  ...
-|3,0,7,1,19,0,1740826283,"-piVersion: v1","kind: Pod","metadata:","    name: postgres-pod","        labels:","              app: db","                    author: intelliqit","                    spec:","                        containers:","                              - name: mydb","                                      image: postgres","                                              env:",>83
-|<"                                                        - name: POSTGRES_PASSWORD","                                                                    value: intelliqit","                                                                              - name: POSTGRES_USER","                                                                                          value: myuser",>121
-|<"                                                                                                    - name: POSTGRES_DB","                                                                                                                value: mydb","                                                                                                                  ..."
+	      containers:
+|3,0,7,1,1,0,1741175141,"      containers:"
 "8	LINE	0
-	i---
-	apiVersion: v1
-	kind: Pod
-	metadata:
-	  name: postgres-pod
-	  labels:
-	    app: db
-	    authour: sun
-	spec:
-	  containers:
-	    - name: mydb
-	      image: postgree
-	      evn:
-	        - name: POSTGRES_PASSWORD
-	          value: sunny
-	...
-|3,0,8,1,16,0,1740826272,"i---","apiVersion: v1","kind: Pod","metadata:","  name: postgres-pod","  labels:","    app: db","    authour: sun","spec:","  containers:","    - name: mydb","      image: postgree","      evn:","        - name: POSTGRES_PASSWORD","          value: sunny","..."
+	    spec:
+|3,0,8,1,1,0,1741175141,"    spec:"
 "9	LINE	0
-	ipiVersion: v1
-	kind: Pod
-	metadata:
-	    name: nginx-pod
-	        labels:
-	              author: intelliqit
-	                    type: proxy
-	                    spec:
-	                        containers:
-	                              - name: mynginx
-	                                      image: nginx
-	                                        ...
-|3,0,9,1,12,0,1740824342,"ipiVersion: v1","kind: Pod","metadata:","    name: nginx-pod","        labels:","              author: intelliqit","                    type: proxy","                    spec:","                        containers:","                              - name: mynginx","                                      image: nginx","                                        ..."
+	        app: webserver
+|3,0,9,1,1,0,1741175140,"        app: webserver"
 ""-	CHAR	0
-	 myjenkins
-|3,1,36,0,1,0,1741067518," myjenkins"
+	      app: wwebserver
+|3,1,36,0,1,0,1741175319,"      app: wwebserver"
 
 # File marks:
-'0  1  0  /var/jenkins_home/secrets/initialAdminPassword
-|4,48,1,0,1741069109,"/var/jenkins_home/secrets/initialAdminPassword"
-'1  18  24  ~/replication-controller.yml
-|4,49,18,24,1741068590,"~/replication-controller.yml"
-'2  18  24  ~/replication-controller.yml
-|4,50,18,24,1741068167,"~/replication-controller.yml"
-'3  18  24  ~/replication-controller.yml
-|4,51,18,24,1741067531,"~/replication-controller.yml"
-'4  18  24  ~/replication-controller.yml
-|4,52,18,24,1741067531,"~/replication-controller.yml"
-'5  23  0  ~/replication-controller.yml
-|4,53,23,0,1741067417,"~/replication-controller.yml"
-'6  23  0  ~/replication-controller.yml
-|4,54,23,0,1741067417,"~/replication-controller.yml"
-'7  23  0  ~/replication-controller.yml
-|4,55,23,0,1741067417,"~/replication-controller.yml"
-'8  23  0  ~/replication-controller.yml
-|4,56,23,0,1741067417,"~/replication-controller.yml"
-'9  23  0  ~/replication-controller.yml
-|4,57,23,0,1741067417,"~/replication-controller.yml"
+'0  6  22  ~/daemonset2.yml
+|4,48,6,22,1741175841,"~/daemonset2.yml"
+'1  5  16  ~/daemonset2.yml
+|4,49,5,16,1741175816,"~/daemonset2.yml"
+'2  5  16  ~/daemonset2.yml
+|4,50,5,16,1741175816,"~/daemonset2.yml"
+'3  7  22  ~/daemonset2.yml
+|4,51,7,22,1741175766,"~/daemonset2.yml"
+'4  6  22  ~/daemonset2.yml
+|4,52,6,22,1741175766,"~/daemonset2.yml"
+'5  5  17  ~/namespace.yml
+|4,53,5,17,1741175742,"~/namespace.yml"
+'6  3  11  ~/daemonset2.yml
+|4,54,3,11,1741175423,"~/daemonset2.yml"
+'7  3  11  ~/daemonset2.yml
+|4,55,3,11,1741175423,"~/daemonset2.yml"
+'8  3  11  ~/daemonset2.yml
+|4,56,3,11,1741175423,"~/daemonset2.yml"
+'9  3  11  ~/daemonset2.yml
+|4,57,3,11,1741175423,"~/daemonset2.yml"
 
 # Jumplist (newest first):
--'  1  0  /var/jenkins_home/secrets/initialAdminPassword
-|4,39,1,0,1741069109,"/var/jenkins_home/secrets/initialAdminPassword"
--'  18  24  ~/replication-controller.yml
-|4,39,18,24,1741068590,"~/replication-controller.yml"
--'  18  24  ~/replication-controller.yml
-|4,39,18,24,1741068590,"~/replication-controller.yml"
--'  18  24  ~/replication-controller.yml
-|4,39,18,24,1741068167,"~/replication-controller.yml"
--'  18  24  ~/replication-controller.yml
-|4,39,18,24,1741068167,"~/replication-controller.yml"
--'  18  24  ~/replication-controller.yml
-|4,39,18,24,1741067531,"~/replication-controller.yml"
--'  18  24  ~/replication-controller.yml
-|4,39,18,24,1741067531,"~/replication-controller.yml"
--'  23  0  ~/replication-controller.yml
-|4,39,23,0,1741067455,"~/replication-controller.yml"
--'  23  0  ~/replication-controller.yml
-|4,39,23,0,1741067455,"~/replication-controller.yml"
--'  23  0  ~/replication-controller.yml
-|4,39,23,0,1741067455,"~/replication-controller.yml"
--'  23  0  ~/replication-controller.yml
-|4,39,23,0,1741067455,"~/replication-controller.yml"
--'  23  0  ~/replication-controller.yml
-|4,39,23,0,1741067455,"~/replication-controller.yml"
--'  23  0  ~/replication-controller.yml
-|4,39,23,0,1741067455,"~/replication-controller.yml"
--'  23  0  ~/replication-controller.yml
-|4,39,23,0,1741067417,"~/replication-controller.yml"
--'  23  0  ~/replication-controller.yml
-|4,39,23,0,1741067417,"~/replication-controller.yml"
--'  1  0  ~/replication-controller.yml
-|4,39,1,0,1741066996,"~/replication-controller.yml"
--'  1  0  ~/replication-controller.yml
-|4,39,1,0,1741066996,"~/replication-controller.yml"
--'  1  0  ~/replication-controller.yml
-|4,39,1,0,1741066996,"~/replication-controller.yml"
--'  1  0  ~/replication-controller.yml
-|4,39,1,0,1741066996,"~/replication-controller.yml"
--'  1  0  ~/replication-controller.yml
-|4,39,1,0,1741066996,"~/replication-controller.yml"
--'  1  0  ~/replication-controller.yml
-|4,39,1,0,1741066996,"~/replication-controller.yml"
--'  1  0  ~/replication-controller.yml
-|4,39,1,0,1741066996,"~/replication-controller.yml"
--'  1  0  ~/replication-controller.yml
-|4,39,1,0,1741066996,"~/replication-controller.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  9  3  ~/pod5.yml
-|4,39,9,3,1741065623,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
--'  17  0  ~/pod5.yml
-|4,39,17,0,1741065512,"~/pod5.yml"
+-'  6  22  ~/daemonset2.yml
+|4,39,6,22,1741175841,"~/daemonset2.yml"
+-'  5  16  ~/daemonset2.yml
+|4,39,5,16,1741175824,"~/daemonset2.yml"
+-'  5  16  ~/daemonset2.yml
+|4,39,5,16,1741175816,"~/daemonset2.yml"
+-'  7  22  ~/daemonset2.yml
+|4,39,7,22,1741175766,"~/daemonset2.yml"
+-'  6  22  ~/daemonset2.yml
+|4,39,6,22,1741175766,"~/daemonset2.yml"
+-'  3  11  ~/daemonset2.yml
+|4,39,3,11,1741175747,"~/daemonset2.yml"
+-'  3  11  ~/daemonset2.yml
+|4,39,3,11,1741175747,"~/daemonset2.yml"
+-'  3  11  ~/daemonset2.yml
+|4,39,3,11,1741175747,"~/daemonset2.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741175742,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741175742,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741175742,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741175742,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741175742,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741175742,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741175742,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741175742,"~/namespace.yml"
 -'  6  0  ~/namespace.yml
-|4,39,6,0,1741065125,"~/namespace.yml"
+|4,39,6,0,1741175720,"~/namespace.yml"
 -'  6  0  ~/namespace.yml
-|4,39,6,0,1741065125,"~/namespace.yml"
+|4,39,6,0,1741175720,"~/namespace.yml"
 -'  6  0  ~/namespace.yml
-|4,39,6,0,1741065125,"~/namespace.yml"
+|4,39,6,0,1741175720,"~/namespace.yml"
 -'  6  0  ~/namespace.yml
-|4,39,6,0,1741065125,"~/namespace.yml"
+|4,39,6,0,1741175720,"~/namespace.yml"
 -'  6  0  ~/namespace.yml
-|4,39,6,0,1741065125,"~/namespace.yml"
+|4,39,6,0,1741175720,"~/namespace.yml"
 -'  6  0  ~/namespace.yml
-|4,39,6,0,1741065125,"~/namespace.yml"
+|4,39,6,0,1741175720,"~/namespace.yml"
 -'  6  0  ~/namespace.yml
-|4,39,6,0,1741065125,"~/namespace.yml"
+|4,39,6,0,1741175720,"~/namespace.yml"
 -'  6  0  ~/namespace.yml
-|4,39,6,0,1741065125,"~/namespace.yml"
--'  6  0  ~/namespace.yml
-|4,39,6,0,1741065125,"~/namespace.yml"
--'  6  0  ~/namespace.yml
-|4,39,6,0,1741065125,"~/namespace.yml"
--'  6  0  ~/namespace.yml
-|4,39,6,0,1741065125,"~/namespace.yml"
--'  6  0  ~/namespace.yml
-|4,39,6,0,1741065125,"~/namespace.yml"
--'  6  0  ~/namespace.yml
-|4,39,6,0,1741065125,"~/namespace.yml"
+|4,39,6,0,1741175720,"~/namespace.yml"
+-'  3  11  ~/daemonset2.yml
+|4,39,3,11,1741175423,"~/daemonset2.yml"
+-'  3  11  ~/daemonset2.yml
+|4,39,3,11,1741175423,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741175406,"~/daemonset2.yml"
+-'  24  0  ~/daemonset2.yml
+|4,39,24,0,1741175406,"~/daemonset2.yml"
+-'  26  0  ~/daemonset2.yml
+|4,39,26,0,1741175406,"~/daemonset2.yml"
+-'  24  0  ~/daemonset2.yml
+|4,39,24,0,1741175406,"~/daemonset2.yml"
+-'  23  0  ~/daemonset2.yml
+|4,39,23,0,1741175406,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741175406,"~/daemonset2.yml"
+-'  24  0  ~/daemonset2.yml
+|4,39,24,0,1741175406,"~/daemonset2.yml"
+-'  24  0  ~/daemonset2.yml
+|4,39,24,0,1741175406,"~/daemonset2.yml"
+-'  24  0  ~/daemonset2.yml
+|4,39,24,0,1741175391,"~/daemonset2.yml"
+-'  24  0  ~/daemonset2.yml
+|4,39,24,0,1741175391,"~/daemonset2.yml"
+-'  1  0  ~/daemonset2.yml
+|4,39,1,0,1741175125,"~/daemonset2.yml"
+-'  1  0  ~/daemonset2.yml
+|4,39,1,0,1741175125,"~/daemonset2.yml"
+-'  1  0  ~/daemonset2.yml
+|4,39,1,0,1741175125,"~/daemonset2.yml"
+-'  1  0  ~/daemonset2.yml
+|4,39,1,0,1741175125,"~/daemonset2.yml"
+-'  1  0  ~/daemonset2.yml
+|4,39,1,0,1741175125,"~/daemonset2.yml"
+-'  1  0  ~/daemonset2.yml
+|4,39,1,0,1741175125,"~/daemonset2.yml"
+-'  1  0  ~/daemonset2.yml
+|4,39,1,0,1741175125,"~/daemonset2.yml"
+-'  11  7  ~/daemonset2.yml
+|4,39,11,7,1741175064,"~/daemonset2.yml"
+-'  10  7  ~/daemonset2.yml
+|4,39,10,7,1741175064,"~/daemonset2.yml"
+-'  12  7  ~/daemonset2.yml
+|4,39,12,7,1741175064,"~/daemonset2.yml"
+-'  10  7  ~/daemonset2.yml
+|4,39,10,7,1741175064,"~/daemonset2.yml"
+-'  9  7  ~/daemonset2.yml
+|4,39,9,7,1741175064,"~/daemonset2.yml"
+-'  11  7  ~/daemonset2.yml
+|4,39,11,7,1741175064,"~/daemonset2.yml"
+-'  10  7  ~/daemonset2.yml
+|4,39,10,7,1741175064,"~/daemonset2.yml"
+-'  10  7  ~/daemonset2.yml
+|4,39,10,7,1741175064,"~/daemonset2.yml"
+-'  10  7  ~/daemonset2.yml
+|4,39,10,7,1741175064,"~/daemonset2.yml"
+-'  10  7  ~/daemonset2.yml
+|4,39,10,7,1741175064,"~/daemonset2.yml"
+-'  10  14  ~/daemonset2.yml
+|4,39,10,14,1741175050,"~/daemonset2.yml"
+-'  10  14  ~/daemonset2.yml
+|4,39,10,14,1741175050,"~/daemonset2.yml"
+-'  23  22  ~/daemonset2.yml
+|4,39,23,22,1741175032,"~/daemonset2.yml"
+-'  22  22  ~/daemonset2.yml
+|4,39,22,22,1741175032,"~/daemonset2.yml"
+-'  24  22  ~/daemonset2.yml
+|4,39,24,22,1741175032,"~/daemonset2.yml"
+-'  23  22  ~/daemonset2.yml
+|4,39,23,22,1741175032,"~/daemonset2.yml"
+-'  23  22  ~/daemonset2.yml
+|4,39,23,22,1741175032,"~/daemonset2.yml"
+-'  23  22  ~/daemonset2.yml
+|4,39,23,22,1741175032,"~/daemonset2.yml"
+-'  23  22  ~/daemonset2.yml
+|4,39,23,22,1741175032,"~/daemonset2.yml"
+-'  23  22  ~/daemonset2.yml
+|4,39,23,22,1741175032,"~/daemonset2.yml"
+-'  23  22  ~/daemonset2.yml
+|4,39,23,22,1741175032,"~/daemonset2.yml"
+-'  23  22  ~/daemonset2.yml
+|4,39,23,22,1741175016,"~/daemonset2.yml"
+-'  23  22  ~/daemonset2.yml
+|4,39,23,22,1741175016,"~/daemonset2.yml"
+-'  24  20  ~/daemonset2.yml
+|4,39,24,20,1741175000,"~/daemonset2.yml"
+-'  24  20  ~/daemonset2.yml
+|4,39,24,20,1741175000,"~/daemonset2.yml"
+-'  24  20  ~/daemonset2.yml
+|4,39,24,20,1741175000,"~/daemonset2.yml"
+-'  24  20  ~/daemonset2.yml
+|4,39,24,20,1741175000,"~/daemonset2.yml"
+-'  24  20  ~/daemonset2.yml
+|4,39,24,20,1741175000,"~/daemonset2.yml"
+-'  24  20  ~/daemonset2.yml
+|4,39,24,20,1741175000,"~/daemonset2.yml"
+-'  24  20  ~/daemonset2.yml
+|4,39,24,20,1741174989,"~/daemonset2.yml"
+-'  24  20  ~/daemonset2.yml
+|4,39,24,20,1741174989,"~/daemonset2.yml"
+-'  24  20  ~/daemonset2.yml
+|4,39,24,20,1741174968,"~/daemonset2.yml"
+-'  24  20  ~/daemonset2.yml
+|4,39,24,20,1741174968,"~/daemonset2.yml"
+-'  27  0  ~/daemonset2.yml
+|4,39,27,0,1741174960,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741174960,"~/daemonset2.yml"
+-'  26  0  ~/daemonset2.yml
+|4,39,26,0,1741174960,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741174960,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741174960,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741174960,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741174960,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741174960,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741174960,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741174960,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741174960,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741174960,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741174960,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741174960,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741174960,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741174947,"~/daemonset2.yml"
+-'  25  0  ~/daemonset2.yml
+|4,39,25,0,1741174947,"~/daemonset2.yml"
+-'  1  0  ~/daemonset2.yml
+|4,39,1,0,1741174465,"~/daemonset2.yml"
+-'  1  0  ~/daemonset2.yml
+|4,39,1,0,1741174465,"~/daemonset2.yml"
+-'  1  0  ~/daemonset2.yml
+|4,39,1,0,1741174465,"~/daemonset2.yml"
+-'  1  0  ~/daemonset2.yml
+|4,39,1,0,1741174465,"~/daemonset2.yml"
+-'  1  0  ~/daemonset2.yml
+|4,39,1,0,1741174465,"~/daemonset2.yml"
+-'  1  0  ~/daemonset2.yml
+|4,39,1,0,1741174465,"~/daemonset2.yml"
+-'  1  0  ~/daemonset2.yml
+|4,39,1,0,1741174465,"~/daemonset2.yml"
 
 # History of marks within files (newest to oldest):
+
+> ~/daemonset2.yml
+	*	1741175840	0
+	"	6	22
+	^	6	23
+	.	6	13
+	+	1	5
+	+	1	11
+	+	1	9
+	+	1	16
+	+	1	0
+	+	1	20
+	+	1	22
+	+	1	7
+	+	1	0
+	+	1	3
+	+	9	5
+	+	13	11
+	+	26	0
+	+	16	13
+	+	18	9
+	+	25	0
+	+	3	11
+	+	5	17
+	+	7	0
+	+	6	13
+
+> ~/namespace.yml
+	*	1741175741	0
+	"	5	17
+	^	5	15
+	.	5	14
+	+	5	15
+	+	6	0
+	+	5	14
+
+> ~/daemonset1.yml
+	*	1741174403	0
+	"	10	1
+	^	18	8
+	.	9	2
+	+	8	5
+	+	13	11
+	+	19	9
+	+	19	17
+	+	19	16
+	+	19	0
+	+	3	8
+	+	9	10
+	+	19	0
+	+	18	8
+	+	9	2
+
+> ~/deployment3.yml
+	*	1741174017	0
+	"	5	0
+	^	5	0
+	.	5	0
+	+	4	17
+	+	5	0
+
+> ~/deployment2.yml
+	*	1741170645	0
+	"	24	13
+	^	24	14
+	.	24	14
+	+	8	5
+	+	13	11
+	+	18	9
+	+	19	17
+	+	25	0
+	+	23	32
+	+	24	14
+
+> ~/deployment1.yml
+	*	1741169974	0
+	"	23	25
+	^	23	26
+	.	23	25
+	+	28	16
+	+	33	5
+	+	38	12
+	+	43	9
+	+	44	16
+	+	47	16
+	+	50	0
+	+	32	12
+	+	8	5
+	+	13	12
+	+	26	0
+	+	15	14
+	+	18	9
+	+	20	23
+	+	25	0
+	+	13	10
+	+	19	13
+	+	23	21
+	+	24	20
+	+	23	25
+
+> ~/replicaset3.yml
+	*	1741168616	0
+	"	22	25
+	^	22	26
+	.	22	25
+	+	1	5
+	+	1	0
+	+	1	9
+	+	1	13
+	+	1	14
+	+	1	23
+	+	1	9
+	+	1	0
+	+	1	8
+	+	1	13
+	+	1	2
+	+	1	5
+	+	1	7
+	+	1	8
+	+	1	9
+	+	1	10
+	+	1	11
+	+	1	3
+	+	1	5
+	+	1	11
+	+	1	9
+	+	1	12
+	+	1	9
+	+	1	33
+	+	1	0
+	+	1	13
+	+	1	18
+	+	25	119
+	+	25	0
+	+	1	1
+	+	4	18
+	+	7	5
+	+	25	15
+	+	25	0
+	+	12	11
+	+	17	9
+	+	24	2
+	+	22	25
+
+> ~/replicaset2.yml
+	*	1741164777	0
+	"	26	0
+	^	26	0
+	.	23	27
+	+	1	16
+	+	1	5
+	+	1	16
+	+	1	15
+	+	1	7
+	+	1	4
+	+	1	11
+	+	1	0
+	+	1	2
+	+	1	4
+	+	1	6
+	+	1	8
+	+	1	4
+	+	1	6
+	+	1	8
+	+	1	10
+	+	1	12
+	+	1	14
+	+	1	3
+	+	1	5
+	+	1	11
+	+	1	10
+	+	1	21
+	+	1	0
+	+	1	14
+	+	1	10
+	+	1	13
+	+	1	5
+	+	1	0
+	+	1	9
+	+	1	3
+	+	1	5
+	+	1	0
+	+	1	11
+	+	1	10
+	+	1	19
+	+	1	0
+	+	1	9
+	+	1	2
+	+	1	18
+	+	1	161
+	+	1	3
+	+	1	16
+	+	1	5
+	+	1	13
+	+	1	26
+	+	1	13
+	+	1	32
+	+	1	0
+	+	1	26
+	+	1	27
+	+	1	4
+	+	1	6
+	+	1	8
+	+	1	26
+	+	1	0
+	+	1	36
+	+	1	11
+	+	1	34
+	+	1	2
+	+	1	3
+	+	2	19
+	+	26	0
+	+	4	0
+	+	3	15
+	+	8	5
+	+	13	13
+	+	18	11
+	+	25	2
+	+	10	10
+	+	11	13
+	+	13	2
+	+	14	4
+	+	18	4
+	+	23	27
+
+> ~/replicaset2
+	*	1741164081	0
+	"	1	0
+
+> ~/replicaset1.yml
+	*	1741155995	0
+	"	16	10
+	^	16	11
+	.	16	10
+	+	1	15
+	+	1	18
+	+	1	16
+	+	1	9
+	+	1	5
+	+	1	13
+	+	1	19
+	+	1	11
+	+	1	0
+	+	1	2
+	+	1	4
+	+	1	6
+	+	1	8
+	+	1	4
+	+	1	6
+	+	1	25
+	+	1	10
+	+	1	5
+	+	1	11
+	+	1	13
+	+	1	19
+	+	1	17
+	+	1	38
+	+	1	21
+	+	1	17
+	+	1	20
+	+	1	12
+	+	1	3
+	+	8	5
+	+	26	0
+	+	9	12
+	+	11	13
+	+	13	0
+	+	11	13
+	+	26	0
+	+	14	17
+	+	18	13
+	+	25	0
+	+	9	9
+	+	13	2
+	+	14	3
+	+	15	6
+	+	16	6
+	+	17	8
+	+	18	4
+	+	19	6
+	+	20	8
+	+	21	10
+	+	22	10
+	+	23	10
+	+	24	14
+	+	14	5
+	+	16	10
+
+> ~/replicaste1
+	*	1741153852	0
+	"	1	0
 
 > /var/jenkins_home/secrets/initialAdminPassword
 	*	1741069103	0
@@ -411,14 +606,6 @@
 	+	17	0
 	+	8	3
 	+	9	3
-
-> ~/namespace.yml
-	*	1741065124	0
-	"	6	0
-	^	6	0
-	.	6	0
-	+	5	15
-	+	6	0
 
 > ~/pod3.yml
 	*	1741064225	0

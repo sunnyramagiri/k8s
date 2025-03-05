@@ -1,0 +1,26 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mynginx
+  labels:
+    app: mydb
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: mydb
+  template:
+    metadata:
+      name: mynginx
+      labels:
+        app: mydb
+    spec:
+      containers:
+        - name: mynginx
+          image: nginx
+          ports:
+            - containerPort: 8080
+              hostPort: 9090
+...
+

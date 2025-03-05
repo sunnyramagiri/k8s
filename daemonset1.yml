@@ -1,0 +1,25 @@
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: myjenkins-pod
+  labels:
+    app: webserver
+spec:
+  
+  selector:
+    matchLabels:
+      app: webserver
+  template:
+    metadata:
+      name: myjenkins-pod
+      labels:
+        app: webserver
+    spec:
+      containers:
+        - name: myjenkins-pod
+          image: jenkins/jenkins
+          ports:
+            - containerPort: 8080
+              hostPort: 9090
+...

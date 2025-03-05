@@ -1,0 +1,26 @@
+---
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: tomee-pod
+  labels:
+    type: webservice
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: webserver
+  template:
+    metadata:
+      name: tomee-pod
+      labels:
+        app: webserver
+    spec:
+      containers:
+        - name: tomee-pod
+          image: tomee
+          ports:
+            - containerPort: 8080
+              hostPort: 9090
+...
+

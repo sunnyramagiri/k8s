@@ -7,3 +7,4 @@
 2025-03-04 04:56:30.251 [info] [127.0.0.1][94b91742][ManagementConnection] New connection established.
 2025-03-04 04:56:30.289 [info] [127.0.0.1][d0f5fe6c][ExtensionHostConnection] New connection established.
 2025-03-04 04:56:31.123 [info] [127.0.0.1][d0f5fe6c][ExtensionHostConnection] <1601> Launched Extension Host Process.
+2025-03-04 06:28:09.395 [info] [127.0.0.1][94b91742][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.

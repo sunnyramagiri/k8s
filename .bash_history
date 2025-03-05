@@ -1,199 +1,3 @@
-kubectl node ls
-kubectl get nodes
-gcloud container clusters get-credentials cluster-1 --region us-central1 --project angular-radar-452012-a0
-kubectl get nodes
-kubectl get nodes -o wide
-kubectl get pods
-vim pod.yml
-ls\
-ls
-kubectl apply -f pod.yml 
-vim pod.yml
-kubectl apply -f pod.yml 
-kubectl get pods
-kubectl logs tomcat-pod
-kubectl describe pod tomcat-pod
-vim pod.yml
-kubectl apply -f pod.yml 
-kubectl get pods
-kubectl describe pod tomcat-pod
-vim pod.yml
-kubectl apply -f pod.yml 
-kubectl describe pod tomcat-pod
-ls
-rm -f pod.yml 
-ls
-rm -f README-cloudshell.txt 
-ls
-vim pod.yml
-kubectl apply -f pod.yml 
-vim pod.yml
-kubectl apply -f pod.yml 
-ls
-kubectl apply -f pod.yml 
-kubectl apply -f pod.yml --validate=false
-vim pod.yml
-kubectl apply -f pod.yml 
-vim pod.yml
-kubectl apply -f pod.yml 
-vim pod.yml
-kubectl apply -f pod.yml 
-vim pod.yml
-kubectl apply -f pod.yml 
-kubectl apply -f pod.yml --validate=false
-kubectl delete pod
-kubectl delete  tomcat-pod
-kubectl delete pods --all
-kubectl pod -o wide
-kubectl run -o wide
-gcloud container clusters get-credentials cluster-1 --region us-central1 --project angular-radar-452012-a0
-kubectl get nodes
-kubectl get nodes -o wide
-kubectl get nodes -o wide | less
-kubectl describe nodes 
-kubectl describe nodes | less
-kubectl run --image tomee appserver
-kubectl get pods
-kubectl describe nodes | less
-kubectl get nodes -o wide
-kubeclt describe pods appsercer | less
-kubectl get pods
-kubectl get pods -o wide 
-kubectl get pods
-kubectl get nodes
-ls
-ls -la
-cd .kube/
-ls
-cat config 
-ls
-vim config 
-ls
-ls -la
-cp config config_bk
-ls
-cd 
-ls
-cd .ssh
-ls -la
-ls
-cd .kube/
-ls
-rm -f pod.yml 
-rm -f README-cloudshell.txt 
-lw
-ls
-cd .ssh
-.ssh
-history
-cd .kube/
-ls
-cd ..
-kubectl get nodes
-gcloud container clusters get-credentials cluster-1 --region us-central1 --project angular-radar-452012-a0
-kubectl get nodes
-kubectl describe nodes
-kubectl describe nodes | less
-e
-kubeclt get pods
-kubeclt run --image tomee appserver
-kubectl run --image tomee appserver
-kubectl get pods
-kubectl get -o wide
-kubectl get nodes -o wide
-kubectl get nodes -o wide appserver
-kubectl get nodes
-kubeclt get nodes -o wide
-kubectl get nodes -o wide
-kubectl get pods
-kubectl get nodes -o wide
-kubectl get pods -o wide
-kubectl run --image mysql websercer 
-kubectl get pods
-kubectl describe nodes appserver | less
-kubectl describe pods appserver | less
-vim pods.yml
-kubectl apply -f pods.yml 
-vim pods.yml
-kubectl apply -f pods.yml 
-vim pods.yml
-kubectl get pods -o wide
-kubectl get nods -o wide
-kubectl get nodes -o wide
-kubectl get pods -o wide
-vim postgres.yml
-kubectl apply -f postgress.yml 
-kubectl apply -f postgres.yml 
-vim postgres.yml
-kubectl apply -f postgres.yml 
-vim postgres.yml
-kubectl apply -f postgres.yml
-vim postgres.yml
-ls
-kubectl apply -f postgres.yml 
-kubeclt delete -f pod.yml
-ls
-kubeclt delete -f pods.yml
-kubectl delete -f pods.yml
-kubectl get pods -o wide
-kubectl delete pods --all -n default
-kubectl get pods -o wide
-kubectl get pods -o wide | less
-rm -f postgres
-ls
-rm -f postgres.yml
-ls
-vim pod-definition.yml
-kubectl apply -f pod-definition.yml
-vim pod-definition.yml
-kubectl apply -f pod-definition.yml
-vim pod-definition.yml
-kubectl apply -f pod-definition.yml
-kubectl get pods -o wide
-kubectl get pods
-kubectl get pods -o wide
-kubectl get pods -o wide | less
-kubectl describe pods tomee | less
-kubectl get pods 
-kubectl get nodes -o wide
-ls
-vim pod-definition.yml 
-kubectl get pods -o wide
-kubectl delete -f all
-kubectl delete -f tomee
-ls
-kubectl get pods -o wide
-kubectl delete -f tomee-pod
-kubectl delete -f pod-definition.yml 
-vim pod2.yml
-kubectl apply -f pod2.yml
-vim pod2.yml
-kubectl apply -f pod2.yml
-vim pod2.yml
-kubectl apply -f pod2.yml
-vim pod2.yml
-kubectl apply -f pod2.yml
-kubectl get pods
-kubectl get pods -o wide
-kubectl get pods myjenk-pod
-kubectl get pods -o wide myjenk-pod
-kubectl get nodes -o wide
-kubectl get pods myjenk-pod
-kubectl get pods -o wide
-ls
-vim pod2.yml 
-git init
-git add .
-git status
-git commit -m "28-2"
-git remote add origin https://github.com/sunnyramagiri/k8s.git
-git push -u origin
-git push -u origin master
-git push -u https://github.com/sunnyramagiri/k8s.git
-git remote add origin https://github.com/sunnyramagiri/k8s.git
-git push https://github.com/sunnyramagiri/k8s.git
-git push -u origin main
-git commit -m "day1 28"
 git config --global user.email "ramagirisunny.uk@gmail.com"
 git config --global user.name "sunnyramagiri"
 git remote add origin https://github.com/sunnyramagiri/k8s.git
@@ -417,3 +221,280 @@ ls -ls
 sudo su -
 kubectl get pods
 kubectl logs myjenkins-5cr2f
+git add .
+git commit -m "namespace,ReplicationController"
+git push
+gcloud container clusters get-credentials cluster-1 --region us-central1 --project angular-radar-452012-a0
+kubectl get pods
+kubectl get nodes
+ls
+rm README-cloudshell.txt 
+ls
+vim replicaste1
+mv replicaste1 replicaset1.yml
+ls
+vim replicaset1.yml 
+kubectl apply -f replicaset1.yml 
+vim replicaset1.yml 
+kubectl apply -f replicaset1.yml 
+vim replicaset1.yml 
+kubectl apply -f replicaset1.yml 
+vim replicaset1.yml 
+kubectl apply -f replicaset1.yml 
+kubectl get pods
+kubectl get pods -o wide
+kubectl get pods
+kubectl describe pods mysql-pod | less
+kubectl get pods
+vim replicaset1.yml 
+kubectl delete -f replicaset1.yml 
+kubectl delete pod replicaset1.yml 
+kubectl delete pods replicaset1.yml 
+kubectl delete pods --all
+kubectl apply -f replicaset1.yml 
+kubectl delete pods --all
+vim replicaset1.yml 
+kubectl delete pods --all
+kubectl get p[ods
+kubectl get pods
+kubectl delete pods --all replicaset1.yml 
+kubectl delete pods --all 
+kubectl get pods
+vim replicaset1.yml 
+kubectl apply -f replicaset1.yml 
+vim replicaset1.yml 
+kubectl apply -f replicaset1.yml 
+vim replicaset1.yml 
+kubectl apply -f replicaset1.yml 
+vim replicaset1.yml 
+kubectl apply -f replicaset1.yml 
+vim replicaset1.yml 
+kubectl apply -f replicaset1.yml 
+kubectl get pods
+kubectl describe mysql-pod-j9zgg | less
+kubectl describe pods mysql-pod-j9zgg | less
+kubectl delete pods --all 
+kubectl get pods
+vim replicaset1.yml 
+kubectl delete pods --all 
+kubectl delete mysql-pod-6jb7n 
+kubectl delete pod  mysql-pod-6jb7n 
+kubectl delete pods mysql-pod-6jb7n 
+kubectl delete -f pods mysql-pod-6jb7n 
+kubectl delete -f pod mysql-pod-6jb7n 
+kubectl get all
+kubectl delete hpa 
+kubectl get  hpa 
+kubectl get nodes
+kubectl get pods
+kubectl get hpa
+kubectl scale deployment mysql-pod-9sqdv  --replicas=0
+kubectl get mysql-pod-9cd5v 
+kubectl logs mysql-pod-9cd5v
+ls
+cat replicaset1.yml 
+ls
+kubectl describe pod mysql-pod-9cd5v
+kubectl delete pod mysql-pod-9cd5v
+kubectl get pods
+kubectl scale deployment mysql-deployment --replicas=0
+kubectl get deployments
+kubectl get replicasets
+kubectl scale replicaset mysql-pod --replicas=0
+kubectl get replicasets
+kubectl get pods
+kubectl get replicasets
+vim replicaset2.yml 
+kubectl get pods
+kubectl delete --all
+kubectl delete pods --all
+kubectl get pods
+kubectl scale replicaset tomee-pod --replicas=0
+kubectl get pods
+vim replicaset2.yml 
+kubectl apply -f replicaset2.yml 
+vim replicaset2.yml 
+gcloud config set account ACCOUNT
+vim replicaset2.yml 
+kubectl apply -f replicaset2.yml 
+vim replicaset2.yml 
+kubectl apply -f replicaset2.yml 
+gcloud auth activate-service-account ACCOUNT
+vim replicaset2.yml 
+kubectl apply -f replicaset2.yml 
+vim replicaset2.yml 
+kubectl apply -f replicaset2.yml 
+kubectl get pods
+gcloud container clusters get-credentials cluster-1 --region us-central1 --project angular-radar-452012-a0
+gcloud auth login
+kubectl get pods
+kubectl apply -f replicaset2.yml 
+vim replicaset2.yml 
+kubectl apply -f replicaset2.yml 
+vim replicaset2.yml 
+kubectl apply -f replicaset2.yml 
+vim replicaset2.yml 
+gcloud container clusters get-credentials cluster-1 --region us-central1 --project angular-radar-452012-a0
+ls
+vim replicaset2
+rm -f replicaset
+vim replicaset2.yml 
+kubectl apply -f replicaset2.yml 
+vim replicaset2.yml 
+kubectl apply -f replicaset2.yml 
+vim replicaset2.yml 
+kubectl apply -f replicaset2
+kubectl apply -f replicaset2.yml 
+vim replicaset2.yml 
+kubectl apply -f replicaset2.yml 
+vim replicaset2.yml 
+kubectl apply -f replicaset2.yml 
+vim replicaset2.yml 
+kubectl apply -f replicaset2.yml 
+gcloud container clusters get-credentials cluster-1 --region us-central1 --project angular-radar-452012-a0
+kubectl get pos
+gcloud container clusters get-credentials cluster-1 --region us-central1 --project angular-radar-452012-a0
+kubectl get pods
+kubectl get nodes
+kubectl get pods -o wide
+vim replicaset3.yml
+kubectl apply -f replicaset3.yml 
+vim replicaset3.yml
+kubectl apply -f replicaset3.yml 
+vim replicaset3.yml
+kubectl apply -f replicaset3.yml 
+vim replicaset3.yml
+kubectl apply -f replicaset3.yml 
+gcloud auth login
+kubectl apply -f replicaset3.yml 
+vim replicaset3.yml
+kubectl apply -f replicaset3.yml 
+vim replicaset3.yml
+kubectl apply -f replicaset3.yml 
+vim replicaset3.yml
+kubectl apply -f replicaset3.yml 
+vim replicaset3.yml
+kubectl apply -f replicaset3.yml 
+kubectl get pods
+kubectl get pods -o wide
+kubectl get nodes -o wide
+kubectl delete -f replicaset3.yml 
+kubectl get pods
+ls
+vim deployment1.yml
+kubectl apply -f deployment1.yml 
+vim deployment1.yml
+kubectl apply -f deployment1.yml 
+vim deployment1.yml
+rm deployment1.yml 
+vim deployment1.yml
+kubectl apply -f deployment1.yml 
+vim deployment1.yml
+kubectl apply -f deployment1.yml 
+vim deployment1.yml
+kubectl apply -f deployment1.yml 
+vim deployment1.yml
+kubectl apply -f deployment1.yml 
+vim deployment1.yml
+kubectl apply -f deployment1.yml 
+kubectl get pods
+kubectl get nodes
+kubectl get pods -o wide
+kubectl get all
+gcloud container clusters get-credentials cluster-1 --region us-central1 --project angular-radar-452012-a0
+ls
+kubectl delete -f deployment1.yml 
+vim deployment2.yml 
+kubectl delete -f deployment2.yml 
+kubectl apply -f deployment2.yml 
+vim deployment2.yml 
+kubectl apply -f deployment2.yml 
+vim deployment2.yml 
+kubectl apply -f deployment2.yml 
+kubectl get pods
+kubectl scale deployment mytomee --replicas=3
+kubectl get pods
+kubectl delete -f deployment2.yml 
+kubectl get pods
+vim deployment3.yml
+gcloud container clusters get-credentials cluster-1 --region us-central1 --project angular-radar-452012-a0
+ls
+kubectl get pods
+vim daemonset1.yml
+kubectl apply -f daemonset1.yml 
+gcloud auth login
+kubectl apply -f daemonset1.yml 
+vim deployment3.yml
+vim daemonset1.yml 
+kubectl apply -f daemonset1.yml 
+vim daemonset1.yml 
+kubectl apply -f daemonset1.yml 
+vim daemonset1.yml 
+kubectl apply -f daemonset1.yml 
+vim daemonset1.yml 
+kubectl apply -f daemonset1.yml 
+vim daemonset1.yml 
+kubectl apply -f daemonset1.yml 
+kubectl delete -f deployment
+kubectl delete -f daemonset1.yml 
+vim daemonset2.yml 
+kubectl apply -f daemonset2.yml 
+vim daemonset2.yml 
+kubectl apply -f daemonset2.yml 
+vim daemonset2.yml 
+kubectl apply -f daemonset2.yml 
+vim daemonset2.yml 
+kubectl apply -f daemonset2.yml 
+vim daemonset2.yml 
+kubectl apply -f daemonset2.yml 
+vim daemonset2.yml 
+kubectl apply -f daemonset2.yml 
+vim daemonset2.yml 
+kubectl apply -f daemonset2.yml 
+vim daemonset2.yml 
+kubectl apply -f daemonset2.yml 
+kubectl get pods
+kubectl get pods -o wide
+kubectl get nodes -o wide
+kubectl get less /var/jenkins_home/secrets/initialAdminPassword
+kubectl log myjenkins
+kubectl logs myjenkins
+kubectl logs /var/jenkins_home/secrets/initialAdminPassword
+vim namespace.yml 
+vim daemonset2.yml 
+kubectl delete -f daemonset2.yml 
+vim daemonset2.yml 
+kubectl delete -f daemonset2.yml 
+vim daemonset2.yml 
+kubectl apply -f daemonset2.yml 
+kubectl apply -f namespace.yml 
+kubectl get ns
+kubectl apply -f daemonset2.yml 
+kubectl logs jenkins-ns
+kubectl logs myjenkins-pod
+kubectl get pods
+kubectl get pods -n jenkins-ns
+kubectl logs myjenkins
+kubectl logs -n jenkins-ns 
+kubectl get  logs jenkins-ns 
+kubectl get logs jenkins-ns 
+kubectl exec -n jenkins -it jenkins-ns -- cat /var/jenkins_home/secrets/initialAdminPassword
+kubectl exec -n jenkins-ns -it jenkins-ns -- cat /var/jenkins_home/secrets/initialAdminPassword
+kubectl exec -n -it jenkins-ns -- cat /var/jenkins_home/secrets/initialAdminPassword
+kubectl get pods -n jenkins-ns
+kubectl exec -n jenkins-ns -it myjenkins-lppl6 -- cat /var/jenkins_home/secrets/initialAdminPassword
+kubectl get nods -o wide 
+kubectl get nods -o wide -n myjenkins-lppl6
+kubectl get nodes -o wide -n myjenkins-lppl6
+kubectl exec -n jenkins-ns -it myjenkins-lppl6 -- cat /var/jenkins_home/secrets/initialAdminPassword
+sudo apt install -y get maven openjdk-17-jdk
+sudo apt update
+sudo apt install -y get maven openjdk-17-jdk
+sudo apt-get install -y get maven openjdk-17-jdk
+sudo apt-get install -y openjdk-17-jdk
+jave --version
+java --version
+git --version
+mvn --version
+sudo apt-get install -y maven
+mvn --version
