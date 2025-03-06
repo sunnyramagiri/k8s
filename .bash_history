@@ -1,6 +1,3 @@
-git config --global user.email "ramagirisunny.uk@gmail.com"
-git config --global user.name "sunnyramagiri"
-git remote add origin https://github.com/sunnyramagiri/k8s.git
 git push -u origin
 git push -u origin master
 git push -u origin main
@@ -498,3 +495,148 @@ git --version
 mvn --version
 sudo apt-get install -y maven
 mvn --version
+git add .
+git commit -m "day3"
+git push
+gcloud container clusters get-credentials cluster-1 --region us-central1 --project angular-radar-452012-a0
+ls
+vim service1.yaml
+vim pod1.yml 
+vim service1.yaml
+kubectl get pods
+kubectl apply -f service1.yaml 
+vim service1.yaml
+kubectl apply -f service1.yaml 
+vim service1.yaml
+kubectl apply -f service1.yaml 
+kubectl get all
+kubectl get pods 
+kubectl get pods sercive
+kubectl get pods svc 
+kubectl get pods service my-service
+kubectl get pods my-service
+kubectl get svc
+kubectl get pods -o wide
+kubectl delete --all
+kubectl delete -f service1.yaml 
+kubectl delete -f pod1.yml 
+ls
+kubectl get pods
+kubectl get pods -o wide
+kubectl apply -f pod1.yml 
+kubectl apply -f service1.yaml 
+kubectl get svc
+kubectl get pods -o wide
+kubectl get svc
+kubectl describe svc my-service | less
+kubectl get pods -o wide
+kubectl get nodes
+kubectl get nodes -o wide
+gcloud compute firewall-rules create rule2 --allow tcp:30009
+gcloud config set project VALUE
+gcloud config set project PROJECT_ID
+kubetcl get pods
+kubetcl get svc
+kubectl get svc
+kubectl get svc -o wide
+kubectl get pods -o wide
+kubectl get svc
+gcloud auth login
+kubectl get svc
+kubectl delete -f service1.yaml 
+kubectl delete -f pod1.yml 
+vim service2.yaml
+kubectl get pods
+kubectl get nodes
+ls 
+kubectl apply -f service2.yaml 
+vim service2.yaml
+kubectl apply -f service2.yaml 
+vim service2.yaml
+kubectl apply -f service2.yaml 
+vim service2.yaml
+kubectl apply -f service2.yaml 
+vim service2.yaml
+kubectl apply -f service2.yaml 
+kubectl get pods svc
+kubectl get svc
+kubectl get nodes -o wide 
+kubectl get pods svc -o wide
+kubectl get svc -o wide
+kubectl get svc
+kubectl get svc -o wide
+kubectl get all
+kubectl get all svc
+kubectl get nodes -o wide
+kubectl get pods -o wide
+kubectl get service -o wide
+kubectl get all 
+kubectl get all my-servic
+kubectl get pods my-servic
+kubectl get pods svc my-servic
+kubectl get nodes -o wide 
+gcloud compute firewall-rules create rule3 --allow tcp:30009
+CLOUDSDK_CORE_PROJECT
+gcloud compute firewall-rules list --filter="name=allow-ports-30000-32767"
+gcloud compute firewall-rules create allow-ports-30000-32767   --allow tcp:30000-32767   --target-tags <your-instance-tag>   --description "Allow traffic on ports 30000-32767"   --direction INGRESS   --priority 1000   --network default
+ls -la
+gcloud compute firewall-rules create allow-ports-30000-32767
+gcloud compute firewall-rules create --allow-ports-30000-32767
+gcloud compute firewall-rules create allow-ports-30000-32767   --allow tcp:30000-32767   --target-tags <your-instance-tag>   --description "Allow traffic on ports 30000-32767"   --direction INGRESS   --priority 1000   --network default
+gcloud compute firewall-rules list --filter="name=allow-ports-300009"
+ls
+kubectl describe svc my-service
+kubectl describe svc my-service | less
+kubectl get svc
+kubectl get pods -o wide
+vim namespace.yml 
+kubectl apply -f namespace.yml 
+vim service2.yaml 
+kubectl delete --all
+kubectl delete -f service2.yaml 
+vim service2.yaml 
+kubectl delete -f service2.yaml 
+vim service2.yaml 
+kubectl get pods
+kubectl apply -f service2.yaml 
+kubeclt get pods -o wide
+kubeclt get pods -o wide -n service-sc
+vim service2.yaml 
+kubeclt get pods -o wide -n my-service
+kubectl get pods -o wide -n my-service
+kubectl get pods -o wide -n service-sv
+vim service2.yaml 
+kubectl get pods -o wide -n service-sc
+kubectl apply -f namespace.yml 
+ls 
+kubectl get pods -o wide -n service-sc
+kubectl get pods -o wide -n my-service
+kubectl get pods
+kubectl get pods nc
+kubectl get nc
+kubectl get ns
+kubectl get all
+kubectl get all svc
+kubectl get all service
+kubectl get  service
+kubectl get  service -n service-sc
+kubectl get pods  service -n service-sc
+kubectl get nodes service -n service-sc
+kubectl get nodes -n service-sc
+kubectl get pods -n service-sc
+kubectl get pod -n service-sc
+kubectl delete --all 
+kubectl delete -f namespace.yml 
+kubectl delete -f service2.yaml 
+kubectl delete --all
+kubectl delete -f service2.yaml 
+kubectl delete -f service2.yaml -n my-service
+kubectl delete service my-service
+kubectl delete service my-service -n service-sc
+kubectl delete --all my-service
+kubectl delete --all service-sc
+kubectl get pods
+kubectl get pods ns
+kubectl get all
+kubectl get all service
+kubectl get all service2.yaml 

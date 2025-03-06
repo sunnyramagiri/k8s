@@ -12,9 +12,9 @@
 ~h
 # Command Line History (newest to oldest):
 :wq
-|2,0,1741175841,,"wq"
+|2,0,1741244121,,"wq"
 :q!
-|2,0,1741174313,,"q!"
+|2,0,1741243875,,"q!"
 :WQ
 |2,0,1741065618,,"WQ"
 
@@ -27,263 +27,347 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-"1	LINE	0
-	
-	
-|3,0,1,1,2,0,1741175145,"",""
-"2	LINE	0
-	              hostPort: 9090
-|3,0,2,1,1,0,1741175143,"              hostPort: 9090"
-"3	LINE	0
-	            - containerPort: 8080
-|3,0,3,1,1,0,1741175143,"            - containerPort: 8080"
-"4	LINE	0
-	          ports:
-|3,0,4,1,1,0,1741175142,"          ports:"
-"5	LINE	0
-	          image: jenkins/jenkins
-|3,0,5,1,1,0,1741175142,"          image: jenkins/jenkins"
-"6	LINE	0
-	        - name: myjenkins
-|3,0,6,1,1,0,1741175142,"        - name: myjenkins"
-"7	LINE	0
-	      containers:
-|3,0,7,1,1,0,1741175141,"      containers:"
-"8	LINE	0
+""1	LINE	0
 	    spec:
-|3,0,8,1,1,0,1741175141,"    spec:"
-"9	LINE	0
+	      type: NodePort
+	      ports:
+	        - targetPort: 8080
+	          port: 8080
+	          nodePort: 9090
+	      selector:
 	        app: webserver
-|3,0,9,1,1,0,1741175140,"        app: webserver"
-""-	CHAR	0
-	      app: wwebserver
-|3,1,36,0,1,0,1741175319,"      app: wwebserver"
+	        type: sunny
+	...
+|3,1,1,1,10,0,1741242695,"    spec:","      type: NodePort","      ports:","        - targetPort: 8080","          port: 8080","          nodePort: 9090","      selector:","        app: webserver","        type: sunny","..."
+"2	LINE	0
+	
+	
+|3,0,2,1,2,0,1741175145,"",""
+"3	LINE	0
+	              hostPort: 9090
+|3,0,3,1,1,0,1741175143,"              hostPort: 9090"
+"4	LINE	0
+	            - containerPort: 8080
+|3,0,4,1,1,0,1741175143,"            - containerPort: 8080"
+"5	LINE	0
+	          ports:
+|3,0,5,1,1,0,1741175142,"          ports:"
+"6	LINE	0
+	          image: jenkins/jenkins
+|3,0,6,1,1,0,1741175142,"          image: jenkins/jenkins"
+"7	LINE	0
+	        - name: myjenkins
+|3,0,7,1,1,0,1741175142,"        - name: myjenkins"
+"8	LINE	0
+	      containers:
+|3,0,8,1,1,0,1741175141,"      containers:"
+"9	LINE	0
+	    spec:
+|3,0,9,1,1,0,1741175141,"    spec:"
+"-	CHAR	0
+	 type: webserver
+|3,0,36,0,1,0,1741238134," type: webserver"
 
 # File marks:
-'0  6  22  ~/daemonset2.yml
-|4,48,6,22,1741175841,"~/daemonset2.yml"
-'1  5  16  ~/daemonset2.yml
-|4,49,5,16,1741175816,"~/daemonset2.yml"
-'2  5  16  ~/daemonset2.yml
-|4,50,5,16,1741175816,"~/daemonset2.yml"
-'3  7  22  ~/daemonset2.yml
-|4,51,7,22,1741175766,"~/daemonset2.yml"
-'4  6  22  ~/daemonset2.yml
-|4,52,6,22,1741175766,"~/daemonset2.yml"
-'5  5  17  ~/namespace.yml
-|4,53,5,17,1741175742,"~/namespace.yml"
-'6  3  11  ~/daemonset2.yml
-|4,54,3,11,1741175423,"~/daemonset2.yml"
-'7  3  11  ~/daemonset2.yml
-|4,55,3,11,1741175423,"~/daemonset2.yml"
-'8  3  11  ~/daemonset2.yml
-|4,56,3,11,1741175423,"~/daemonset2.yml"
-'9  3  11  ~/daemonset2.yml
-|4,57,3,11,1741175423,"~/daemonset2.yml"
+'0  7  2  ~/service2.yaml
+|4,48,7,2,1741244121,"~/service2.yaml"
+'1  6  22  ~/service2.yaml
+|4,49,6,22,1741244079,"~/service2.yaml"
+'2  6  22  ~/service2.yaml
+|4,50,6,22,1741244079,"~/service2.yaml"
+'3  6  22  ~/service2.yaml
+|4,51,6,22,1741243996,"~/service2.yaml"
+'4  6  22  ~/service2.yaml
+|4,52,6,22,1741243996,"~/service2.yaml"
+'5  5  17  ~/service2.yaml
+|4,53,5,17,1741243975,"~/service2.yaml"
+'6  5  17  ~/service2.yaml
+|4,54,5,17,1741243975,"~/service2.yaml"
+'7  5  17  ~/service2.yaml
+|4,55,5,17,1741243975,"~/service2.yaml"
+'8  5  17  ~/service2.yaml
+|4,56,5,17,1741243975,"~/service2.yaml"
+'9  5  17  ~/service2.yaml
+|4,57,5,17,1741243975,"~/service2.yaml"
 
 # Jumplist (newest first):
--'  6  22  ~/daemonset2.yml
-|4,39,6,22,1741175841,"~/daemonset2.yml"
--'  5  16  ~/daemonset2.yml
-|4,39,5,16,1741175824,"~/daemonset2.yml"
--'  5  16  ~/daemonset2.yml
-|4,39,5,16,1741175816,"~/daemonset2.yml"
--'  7  22  ~/daemonset2.yml
-|4,39,7,22,1741175766,"~/daemonset2.yml"
--'  6  22  ~/daemonset2.yml
-|4,39,6,22,1741175766,"~/daemonset2.yml"
--'  3  11  ~/daemonset2.yml
-|4,39,3,11,1741175747,"~/daemonset2.yml"
--'  3  11  ~/daemonset2.yml
-|4,39,3,11,1741175747,"~/daemonset2.yml"
--'  3  11  ~/daemonset2.yml
-|4,39,3,11,1741175747,"~/daemonset2.yml"
+-'  7  2  ~/service2.yaml
+|4,39,7,2,1741244121,"~/service2.yaml"
+-'  6  22  ~/service2.yaml
+|4,39,6,22,1741244109,"~/service2.yaml"
+-'  6  22  ~/service2.yaml
+|4,39,6,22,1741244079,"~/service2.yaml"
+-'  6  22  ~/service2.yaml
+|4,39,6,22,1741243996,"~/service2.yaml"
+-'  5  17  ~/service2.yaml
+|4,39,5,17,1741243984,"~/service2.yaml"
+-'  5  17  ~/service2.yaml
+|4,39,5,17,1741243984,"~/service2.yaml"
+-'  5  17  ~/service2.yaml
+|4,39,5,17,1741243984,"~/service2.yaml"
+-'  5  17  ~/service2.yaml
+|4,39,5,17,1741243975,"~/service2.yaml"
+-'  7  22  ~/service2.yaml
+|4,39,7,22,1741243928,"~/service2.yaml"
+-'  7  22  ~/service2.yaml
+|4,39,7,22,1741243928,"~/service2.yaml"
+-'  6  22  ~/service2.yaml
+|4,39,6,22,1741243928,"~/service2.yaml"
+-'  29  20  ~/service2.yaml
+|4,39,29,20,1741243910,"~/service2.yaml"
+-'  30  20  ~/service2.yaml
+|4,39,30,20,1741243910,"~/service2.yaml"
+-'  28  20  ~/service2.yaml
+|4,39,28,20,1741243910,"~/service2.yaml"
+-'  29  20  ~/service2.yaml
+|4,39,29,20,1741243910,"~/service2.yaml"
+-'  30  20  ~/service2.yaml
+|4,39,30,20,1741243910,"~/service2.yaml"
+-'  28  20  ~/service2.yaml
+|4,39,28,20,1741243910,"~/service2.yaml"
+-'  29  20  ~/service2.yaml
+|4,39,29,20,1741243910,"~/service2.yaml"
+-'  30  20  ~/service2.yaml
+|4,39,30,20,1741243910,"~/service2.yaml"
+-'  28  20  ~/service2.yaml
+|4,39,28,20,1741243910,"~/service2.yaml"
+-'  29  20  ~/service2.yaml
+|4,39,29,20,1741243910,"~/service2.yaml"
 -'  5  17  ~/namespace.yml
-|4,39,5,17,1741175742,"~/namespace.yml"
+|4,39,5,17,1741243889,"~/namespace.yml"
 -'  5  17  ~/namespace.yml
-|4,39,5,17,1741175742,"~/namespace.yml"
+|4,39,5,17,1741243889,"~/namespace.yml"
 -'  5  17  ~/namespace.yml
-|4,39,5,17,1741175742,"~/namespace.yml"
+|4,39,5,17,1741243889,"~/namespace.yml"
 -'  5  17  ~/namespace.yml
-|4,39,5,17,1741175742,"~/namespace.yml"
+|4,39,5,17,1741243889,"~/namespace.yml"
 -'  5  17  ~/namespace.yml
-|4,39,5,17,1741175742,"~/namespace.yml"
+|4,39,5,17,1741243889,"~/namespace.yml"
 -'  5  17  ~/namespace.yml
-|4,39,5,17,1741175742,"~/namespace.yml"
+|4,39,5,17,1741243889,"~/namespace.yml"
 -'  5  17  ~/namespace.yml
-|4,39,5,17,1741175742,"~/namespace.yml"
+|4,39,5,17,1741243889,"~/namespace.yml"
 -'  5  17  ~/namespace.yml
-|4,39,5,17,1741175742,"~/namespace.yml"
--'  6  0  ~/namespace.yml
-|4,39,6,0,1741175720,"~/namespace.yml"
--'  6  0  ~/namespace.yml
-|4,39,6,0,1741175720,"~/namespace.yml"
--'  6  0  ~/namespace.yml
-|4,39,6,0,1741175720,"~/namespace.yml"
--'  6  0  ~/namespace.yml
-|4,39,6,0,1741175720,"~/namespace.yml"
--'  6  0  ~/namespace.yml
-|4,39,6,0,1741175720,"~/namespace.yml"
--'  6  0  ~/namespace.yml
-|4,39,6,0,1741175720,"~/namespace.yml"
--'  6  0  ~/namespace.yml
-|4,39,6,0,1741175720,"~/namespace.yml"
--'  6  0  ~/namespace.yml
-|4,39,6,0,1741175720,"~/namespace.yml"
--'  3  11  ~/daemonset2.yml
-|4,39,3,11,1741175423,"~/daemonset2.yml"
--'  3  11  ~/daemonset2.yml
-|4,39,3,11,1741175423,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741175406,"~/daemonset2.yml"
--'  24  0  ~/daemonset2.yml
-|4,39,24,0,1741175406,"~/daemonset2.yml"
--'  26  0  ~/daemonset2.yml
-|4,39,26,0,1741175406,"~/daemonset2.yml"
--'  24  0  ~/daemonset2.yml
-|4,39,24,0,1741175406,"~/daemonset2.yml"
--'  23  0  ~/daemonset2.yml
-|4,39,23,0,1741175406,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741175406,"~/daemonset2.yml"
--'  24  0  ~/daemonset2.yml
-|4,39,24,0,1741175406,"~/daemonset2.yml"
--'  24  0  ~/daemonset2.yml
-|4,39,24,0,1741175406,"~/daemonset2.yml"
--'  24  0  ~/daemonset2.yml
-|4,39,24,0,1741175391,"~/daemonset2.yml"
--'  24  0  ~/daemonset2.yml
-|4,39,24,0,1741175391,"~/daemonset2.yml"
--'  1  0  ~/daemonset2.yml
-|4,39,1,0,1741175125,"~/daemonset2.yml"
--'  1  0  ~/daemonset2.yml
-|4,39,1,0,1741175125,"~/daemonset2.yml"
--'  1  0  ~/daemonset2.yml
-|4,39,1,0,1741175125,"~/daemonset2.yml"
--'  1  0  ~/daemonset2.yml
-|4,39,1,0,1741175125,"~/daemonset2.yml"
--'  1  0  ~/daemonset2.yml
-|4,39,1,0,1741175125,"~/daemonset2.yml"
--'  1  0  ~/daemonset2.yml
-|4,39,1,0,1741175125,"~/daemonset2.yml"
--'  1  0  ~/daemonset2.yml
-|4,39,1,0,1741175125,"~/daemonset2.yml"
--'  11  7  ~/daemonset2.yml
-|4,39,11,7,1741175064,"~/daemonset2.yml"
--'  10  7  ~/daemonset2.yml
-|4,39,10,7,1741175064,"~/daemonset2.yml"
--'  12  7  ~/daemonset2.yml
-|4,39,12,7,1741175064,"~/daemonset2.yml"
--'  10  7  ~/daemonset2.yml
-|4,39,10,7,1741175064,"~/daemonset2.yml"
--'  9  7  ~/daemonset2.yml
-|4,39,9,7,1741175064,"~/daemonset2.yml"
--'  11  7  ~/daemonset2.yml
-|4,39,11,7,1741175064,"~/daemonset2.yml"
--'  10  7  ~/daemonset2.yml
-|4,39,10,7,1741175064,"~/daemonset2.yml"
--'  10  7  ~/daemonset2.yml
-|4,39,10,7,1741175064,"~/daemonset2.yml"
--'  10  7  ~/daemonset2.yml
-|4,39,10,7,1741175064,"~/daemonset2.yml"
--'  10  7  ~/daemonset2.yml
-|4,39,10,7,1741175064,"~/daemonset2.yml"
--'  10  14  ~/daemonset2.yml
-|4,39,10,14,1741175050,"~/daemonset2.yml"
--'  10  14  ~/daemonset2.yml
-|4,39,10,14,1741175050,"~/daemonset2.yml"
--'  23  22  ~/daemonset2.yml
-|4,39,23,22,1741175032,"~/daemonset2.yml"
--'  22  22  ~/daemonset2.yml
-|4,39,22,22,1741175032,"~/daemonset2.yml"
--'  24  22  ~/daemonset2.yml
-|4,39,24,22,1741175032,"~/daemonset2.yml"
--'  23  22  ~/daemonset2.yml
-|4,39,23,22,1741175032,"~/daemonset2.yml"
--'  23  22  ~/daemonset2.yml
-|4,39,23,22,1741175032,"~/daemonset2.yml"
--'  23  22  ~/daemonset2.yml
-|4,39,23,22,1741175032,"~/daemonset2.yml"
--'  23  22  ~/daemonset2.yml
-|4,39,23,22,1741175032,"~/daemonset2.yml"
--'  23  22  ~/daemonset2.yml
-|4,39,23,22,1741175032,"~/daemonset2.yml"
--'  23  22  ~/daemonset2.yml
-|4,39,23,22,1741175032,"~/daemonset2.yml"
--'  23  22  ~/daemonset2.yml
-|4,39,23,22,1741175016,"~/daemonset2.yml"
--'  23  22  ~/daemonset2.yml
-|4,39,23,22,1741175016,"~/daemonset2.yml"
--'  24  20  ~/daemonset2.yml
-|4,39,24,20,1741175000,"~/daemonset2.yml"
--'  24  20  ~/daemonset2.yml
-|4,39,24,20,1741175000,"~/daemonset2.yml"
--'  24  20  ~/daemonset2.yml
-|4,39,24,20,1741175000,"~/daemonset2.yml"
--'  24  20  ~/daemonset2.yml
-|4,39,24,20,1741175000,"~/daemonset2.yml"
--'  24  20  ~/daemonset2.yml
-|4,39,24,20,1741175000,"~/daemonset2.yml"
--'  24  20  ~/daemonset2.yml
-|4,39,24,20,1741175000,"~/daemonset2.yml"
--'  24  20  ~/daemonset2.yml
-|4,39,24,20,1741174989,"~/daemonset2.yml"
--'  24  20  ~/daemonset2.yml
-|4,39,24,20,1741174989,"~/daemonset2.yml"
--'  24  20  ~/daemonset2.yml
-|4,39,24,20,1741174968,"~/daemonset2.yml"
--'  24  20  ~/daemonset2.yml
-|4,39,24,20,1741174968,"~/daemonset2.yml"
--'  27  0  ~/daemonset2.yml
-|4,39,27,0,1741174960,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741174960,"~/daemonset2.yml"
--'  26  0  ~/daemonset2.yml
-|4,39,26,0,1741174960,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741174960,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741174960,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741174960,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741174960,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741174960,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741174960,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741174960,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741174960,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741174960,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741174960,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741174960,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741174960,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741174947,"~/daemonset2.yml"
--'  25  0  ~/daemonset2.yml
-|4,39,25,0,1741174947,"~/daemonset2.yml"
--'  1  0  ~/daemonset2.yml
-|4,39,1,0,1741174465,"~/daemonset2.yml"
--'  1  0  ~/daemonset2.yml
-|4,39,1,0,1741174465,"~/daemonset2.yml"
--'  1  0  ~/daemonset2.yml
-|4,39,1,0,1741174465,"~/daemonset2.yml"
--'  1  0  ~/daemonset2.yml
-|4,39,1,0,1741174465,"~/daemonset2.yml"
--'  1  0  ~/daemonset2.yml
-|4,39,1,0,1741174465,"~/daemonset2.yml"
--'  1  0  ~/daemonset2.yml
-|4,39,1,0,1741174465,"~/daemonset2.yml"
--'  1  0  ~/daemonset2.yml
-|4,39,1,0,1741174465,"~/daemonset2.yml"
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  5  17  ~/namespace.yml
+|4,39,5,17,1741243889,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243876,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243875,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243875,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243875,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243875,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243875,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243875,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243875,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243875,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243875,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243875,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243875,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243875,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243875,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243875,"~/namespace.yml"
+-'  3  5  ~/namespace.yml
+|4,39,3,5,1741243875,"~/namespace.yml"
 
 # History of marks within files (newest to oldest):
+
+> ~/service2.yaml
+	*	1741244120	0
+	"	7	2
+	^	6	23
+	.	6	22
+	+	3	16
+	+	9	15
+	+	13	16
+	+	15	11
+	+	20	10
+	+	19	21
+	+	35	20
+	+	20	9
+	+	23	22
+	+	35	20
+	+	35	9
+	+	35	15
+	+	35	20
+	+	35	15
+	+	35	19
+	+	35	0
+	+	3	12
+	+	2	12
+	+	35	0
+	+	24	5
+	+	25	16
+	+	26	8
+	+	29	13
+	+	34	0
+	+	29	20
+	+	30	11
+	+	33	0
+	+	29	20
+	+	5	18
+	+	6	22
+
+> ~/namespace.yml
+	*	1741243886	0
+	"	5	17
+	^	5	18
+	.	5	17
+	+	5	15
+	+	6	0
+	+	5	14
+	+	3	6
+	+	5	17
+
+> ~/service1.yaml
+	*	1741238241	0
+	"	12	8
+	^	12	9
+	.	10	8
+	+	4	0
+	+	3	7
+	+	9	5
+	+	10	16
+	+	15	11
+	+	18	0
+	+	17	0
+	+	6	12
+	+	6	9
+	+	8	0
+	+	10	8
+
+> ~/pod1.yml
+	*	1741237956	0
+	"	13	0
+	^	13	0
+	.	13	0
+	+	9	5
+	+	12	13
+	+	11	18
+	+	5	8
+	+	13	0
 
 > ~/daemonset2.yml
 	*	1741175840	0
@@ -310,15 +394,6 @@
 	+	5	17
 	+	7	0
 	+	6	13
-
-> ~/namespace.yml
-	*	1741175741	0
-	"	5	17
-	^	5	15
-	.	5	14
-	+	5	15
-	+	6	0
-	+	5	14
 
 > ~/daemonset1.yml
 	*	1741174403	0
@@ -733,17 +808,6 @@
 	+	28	0
 	+	9	5
 	+	18	0
-
-> ~/pod1.yml
-	*	1740978579	0
-	"	13	0
-	^	13	0
-	.	13	0
-	+	9	5
-	+	12	13
-	+	11	18
-	+	5	8
-	+	13	0
 
 > ~/pod-definition.yml
 	*	1740826876	0

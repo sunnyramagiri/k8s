@@ -1,0 +1,34 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+  namespace: service-sc
+  labels:
+    app: webserver
+    type: sunny
+spec:
+  relpices: 2
+  selector:
+    matchLabels:
+      app: webserver
+  template:
+    metadata:
+      name: my-server
+      labels:
+        app: webserver
+    spec:
+      containers:
+        - name: my-service
+          image: tomee
+spec:
+  type: NodePort
+  ports:
+    - targetPort: 8080
+      port: 8080
+      nodePort: 30008
+  selector:
+    app: webserver
+    type: sunny
+...
+
